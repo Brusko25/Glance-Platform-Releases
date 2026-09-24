@@ -5,6 +5,7 @@ Includes the complete source updates from Finance 2.6.4, LLM Usage 2.1.1 and Ple
 - Finance preserves local transaction/event dates across restarts, recovers unreadable workspaces safely, confirms record removal, and keeps portfolio selections during quote refreshes. Recovery details are available in its original Settings screen.
 - Usage reuses a persistent Codex helper, closes it gracefully, and waits for helper cleanup before the tile worker exits. Sign-in changes release idle helper sessions. Existing Claude refresh preferences and cached readings are preserved.
 - Plex uses durable settings/history/lease writes, retries transient Tdarr guard file failures, retires idle guards, and saves activity progress on exit. Windows shutdown invokes bounded cleanup without cancelling shutdown; unresolved leases remain available for recovery.
+- The Plex adapter serializes simultaneous saves within its worker to avoid a file-replacement race found by Windows CI.
 - Each tile package includes UPSTREAM.json identifying its source version and SHA-256 file hashes.
 
 Validation uses the platform suite, the upstream offline Finance suite, simulated Codex helpers, Claude polling fixtures, and the upstream simulated Plex/Tdarr suite. Live Tdarr control and an actual Windows restart were not performed.
