@@ -1,3 +1,9 @@
+# Glance tiles 0.2.3
+
+- Updates the Plex tile to Glance Plex 2.2.2. Widget resources and the owned icon are disposed once, and cleanup tolerates an already-cleared tray menu.
+- Adds a hosted Plex regression that repeats disposal after normal and system shutdown cleanup.
+- Includes the existing Finance 2.6.4 and Usage 2.1.1 sources. Tile settings, connections, history and layouts are retained.
+
 # Glance tiles 0.2.2
 
 Includes the complete source updates from Finance 2.6.4, LLM Usage 2.1.1 and Plex 2.2.1.
