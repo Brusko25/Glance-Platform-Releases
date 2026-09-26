@@ -1,3 +1,7 @@
+# Glance tiles 0.2.5
+
+The Usage tile now includes Glance LLM Usage 2.1.3. Claude checks keep the sign-in token in memory instead of decrypting Claude's saved sign-in every time, which cuts calls to Windows' security service (lsass) to about one per token. The token is read again when Claude renews it, when you switch accounts in Claude, when it has five minutes or less left, or if Claude rejects it. Finance (2.6.5) and Plex (2.2.3) are unchanged. Existing connections, preferences, history and layouts are retained.
+
 # Glance tiles 0.2.4
 
 Tiles now include Glance LLM Usage 2.1.2, Glance Finance 2.6.5 and Glance Plex 2.2.3. Existing connections, preferences, history and layouts are retained.
