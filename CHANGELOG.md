@@ -1,3 +1,7 @@
+# Glance tiles 0.2.8
+
+The Plex tile now includes Glance Plex 2.3.0 with a simple Tdarr rule: while anyone is watching Plex, playing or paused, the tile pauses every Tdarr node, including nodes that connect during playback, and resumes them once no one has watched for the resume delay (5 minutes by default). Node selection and the older stream filters are gone, so a saved selection or filter can no longer leave nodes running during a stream. Automatic pausing is on by default and updating turns it on once; you can turn it off in the Plex tile's options. The tiles also include Finance 2.6.6 and LLM Usage 2.2.1, which only change the standalone apps' icons. Existing connections, preferences, history and layouts are retained.
+
 # Glance tiles 0.2.7
 
 Manager improvements. The tiles still run Finance 2.6.5, LLM Usage 2.2.0 and Plex 2.2.3; their packages are version 0.2.7.
