@@ -1,3 +1,12 @@
+# Glance tiles 0.2.7
+
+Manager improvements. The tiles still run Finance 2.6.5, LLM Usage 2.2.0 and Plex 2.2.3; their packages are version 0.2.7.
+
+- Fix the Desktop map showing only one Finance chart. It now tracks every visible chart, including movement, opening, closing and show/hide changes.
+- Remove the repeated page headings, Marketplace introduction and My tiles introductory panel so each page starts with its controls and content.
+- Label the Marketplace search field "Search tiles".
+- Show Marketplace tiles as compact full-width rows with their name, version and install/update state. Click a row or its name to see its description, author and declared access; installed tiles open details without reinstalling.
+
 # Glance tiles 0.2.6
 
 The Usage tile now includes Glance LLM Usage 2.2.0, which retires the option that read Codex through the Codex app's own codex.exe. Codex is tracked through Sign in with ChatGPT and its pinned, verified helper. If a Usage tile still used the old option, its Codex row explains how to switch until you sign in with ChatGPT or stop Codex monitoring; nothing else changes. "Existing desktop connections…" is now "Claude desktop sign-in…". Finance (2.6.5) and Plex (2.2.3) are unchanged.
