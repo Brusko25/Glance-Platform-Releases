@@ -1,3 +1,7 @@
+# Glance tiles 0.2.6
+
+The Usage tile now includes Glance LLM Usage 2.2.0, which retires the option that read Codex through the Codex app's own codex.exe. Codex is tracked through Sign in with ChatGPT and its pinned, verified helper. If a Usage tile still used the old option, its Codex row explains how to switch until you sign in with ChatGPT or stop Codex monitoring; nothing else changes. "Existing desktop connections…" is now "Claude desktop sign-in…". Finance (2.6.5) and Plex (2.2.3) are unchanged.
+
 # Glance tiles 0.2.5
 
 The Usage tile now includes Glance LLM Usage 2.1.3. Claude checks keep the sign-in token in memory instead of decrypting Claude's saved sign-in every time, which cuts calls to Windows' security service (lsass) to about one per token. The token is read again when Claude renews it, when you switch accounts in Claude, when it has five minutes or less left, or if Claude rejects it. Finance (2.6.5) and Plex (2.2.3) are unchanged. Existing connections, preferences, history and layouts are retained.
