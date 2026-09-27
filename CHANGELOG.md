@@ -1,3 +1,10 @@
+# Glance tiles 0.2.9
+
+Create tiles without writing code. The tiles are unchanged: Finance 2.6.6, LLM Usage 2.2.1 and Plex 2.3.0; their packages are version 0.2.9.
+
+- **Create with AI.** Create tiles has a new section: describe the tile you want and choose **Copy AI prompt**, then paste the prompt into any AI chat. The prompt includes the whole tile SDK, the manifest rules, the C# 5 / .NET Framework 4.8 limits, a working example, safety rules and a reply format Glance can read. Choose **Build from AI reply…**, paste the answer, and Glance compiles it on this PC, checks that it can start, packages it and adds it to your Marketplace for review and install. If the build fails, **Copy fix request for the AI** copies the errors back in one paste. **Preview in a test workspace** runs the new tile separately first.
+- Glance.Tools.exe has a new `--check-entry <folder>` command that verifies a tile's entry class without running it.
+
 # Glance tiles 0.2.8
 
 The Plex tile now includes Glance Plex 2.3.0 with a simple Tdarr rule: while anyone is watching Plex, playing or paused, the tile pauses every Tdarr node, including nodes that connect during playback, and resumes them once no one has watched for the resume delay (5 minutes by default). Node selection and the older stream filters are gone, so a saved selection or filter can no longer leave nodes running during a stream. Automatic pausing is on by default and updating turns it on once; you can turn it off in the Plex tile's options. The tiles also include Finance 2.6.6 and LLM Usage 2.2.1, which only change the standalone apps' icons. Existing connections, preferences, history and layouts are retained.

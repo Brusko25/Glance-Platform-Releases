@@ -34,6 +34,8 @@ A newer tile package can be added to the local catalog and installed from Market
 
 ## Create tiles
 
+To make a tile without writing code, use **Create tiles → Create with AI**: describe what you want, choose **Copy AI prompt**, and paste it into any AI chat. When the AI replies, choose **Build from AI reply…** and paste the reply. Glance compiles it, adds it to your Marketplace, and lets you review what it can access before installing. If the build fails, copy the fix request back to the AI and try again. AI-written tiles run with your Windows account's access, like any tile.
+
 Open Create tiles in the manager, or extract creator-kit.zip. The kit contains the SDK, a starter project, Clock/Notes examples and the creator guide. Native tiles run with your Windows user's permissions; install packages from creators you trust.
 
 ## Preview limits
