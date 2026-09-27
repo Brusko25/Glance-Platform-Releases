@@ -1,10 +1,12 @@
 # Glance Platform
 
-Glance puts independent, movable desktop tiles under one manager. Glance Platform 1.0 includes Finance, LLM Usage and Plex, plus Clock and Notes examples.
+Glance puts independent, movable desktop tiles under one manager. Glance Platform 1.1 includes Finance, LLM Usage and Plex, plus Clock and Notes examples.
 
 ## Start
 
-Windows 10/11 with .NET Framework 4.8 is required. Download the Windows ZIP from the release page, extract the entire folder, then run Start Glance.cmd. Keep Glance.exe, Glance.TileSdk.dll and the other files together. No administrator installation is required.
+Windows 10/11 with .NET Framework 4.8 is required. Download **Glance-Platform-1.1.0-Setup.exe** from the release page and run it. Setup installs for your Windows account and offers a desktop shortcut. Glance appears in Windows **Installed apps / Add or remove programs**. Uninstall removes program files and shortcuts while keeping saved tile data.
+
+For a portable copy, download the Windows ZIP, extract the entire folder, and run Start Glance.cmd. Keep Glance.exe, Glance.TileSdk.dll and the other files together. Neither option requires administrator installation.
 
 Try Glance.cmd opens a separate sample workspace. Its Finance, Usage and Plex tiles use synthetic data. Your normal workspace is separate.
 
@@ -28,9 +30,11 @@ Fresh installations have no accounts or personal data. Tile data is stored local
 
 ## Update and back up
 
-Quit Glance before replacing the portable program folder. Extract a new release to a new folder and run its Start Glance.cmd; it uses the same normal workspace. Back up %LOCALAPPDATA%\Glance\Platform before making major changes.
+Open **Preferences → Platform updates → Check for updates**. If a newer stable release is available, choose **Install and restart**. Glance downloads from its public GitHub release, verifies SHA-256 checksums and program versions, waits for tiles to finish cleanup, and restarts with your original workspace. Installed copies use the installer; portable copies update in place with a backup for rollback. Existing Glance desktop shortcut icons refresh, and custom workspace arguments are preserved. Updates are started by you; Glance does not silently install a new Platform version.
 
-A newer tile package can be added to the local catalog and installed from Marketplace. Settings, placement and private data are preserved. Glance does not include a host installer or automatic online updates yet.
+If any tile cannot confirm cleanup, the update stops and its recovery files are kept. Update logs and portable program backups are under the workspace's updates folder. Quit any other workspace using the same program folder before updating. Back up %LOCALAPPDATA%\Glance\Platform before making major changes.
+
+Use **My tiles → Update all installed tiles** to update every installed tile with a newer bundled or local catalog package. Enabled tiles restart after cleanup; disabled tiles stay off. Settings, placement and private data are preserved. A failed tile update does not prevent other tiles from updating. Add a creator's newer .glancetile through **Marketplace → Add to catalog**, then run Update all. Online tile hosting remains future work. After updating Platform, run Update all installed tiles to apply its new bundled packages.
 
 ## Create tiles
 
@@ -40,4 +44,4 @@ Open Create tiles in the manager, or extract creator-kit.zip. The kit contains t
 
 ## Known limits
 
-Glance is unsigned and portable. Online marketplace hosting, publisher verification and a Windows installer are still planned. Simulated tests cover Tdarr recovery; this release was not verified by controlling a live encoding queue or rebooting Windows.
+Glance's installer and portable app are unsigned. Online marketplace hosting and publisher verification are still planned. Simulated tests cover Tdarr recovery; this release was not verified by controlling a live encoding queue or rebooting Windows.

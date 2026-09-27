@@ -1,3 +1,10 @@
+# Glance Platform 1.1.0
+
+- **Platform updates:** Preferences checks the latest stable GitHub release. Install and restart downloads and verifies the release, waits for clean tile shutdown, and keeps the current workspace. Portable updates retain a backup and roll back file replacement failures; installed copies use setup.
+- **Update all installed tiles:** My tiles updates installed packages from the bundled tiles and local catalog. Settings, data, placement and enabled state are retained. Failures are reported per tile, and cancelling restores any tile already stopped cleanly. Hosted tile catalogs remain future work.
+- **Windows installer:** per-user setup, Start menu entry, optional desktop shortcut, and Windows Installed apps / Add or remove programs support. Uninstall preserves private tile data. Existing Glance desktop shortcut icons refresh during updates, preserving custom workspace arguments.
+- All bundled packages are now 1.1.0. Finance, Usage and Plex keep their maintained source based on the final standalone releases (2.6.6, 2.2.1 and 2.3.0 respectively). No new account or service behavior is introduced.
+
 # Glance Platform 1.0.0
 
 The first full release. It includes everything from the 0.2 previews, Create with AI from 0.2.9, and a new icon set. The tiles are still based on Finance 2.6.6, LLM Usage 2.2.1 and Plex 2.3.0; their packages are version 1.0.0, so Marketplace offers them as updates to 0.2.x packages. Existing workspaces, settings, tile data and layouts are kept.
