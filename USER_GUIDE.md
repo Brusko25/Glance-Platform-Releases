@@ -1,6 +1,6 @@
 # Glance Platform
 
-Glance puts independent, movable desktop tiles under one manager. This first public preview includes Finance, LLM Usage and Plex, plus Clock and Notes examples.
+Glance puts independent, movable desktop tiles under one manager. Glance Platform 1.0 includes Finance, LLM Usage and Plex, plus Clock and Notes examples.
 
 ## Start
 
@@ -30,7 +30,7 @@ Fresh installations have no accounts or personal data. Tile data is stored local
 
 Quit Glance before replacing the portable program folder. Extract a new release to a new folder and run its Start Glance.cmd; it uses the same normal workspace. Back up %LOCALAPPDATA%\Glance\Platform before making major changes.
 
-A newer tile package can be added to the local catalog and installed from Marketplace. Settings, placement and private data are preserved. The first preview does not include a host installer or automatic online updates.
+A newer tile package can be added to the local catalog and installed from Marketplace. Settings, placement and private data are preserved. Glance does not include a host installer or automatic online updates yet.
 
 ## Create tiles
 
@@ -38,6 +38,6 @@ To make a tile without writing code, use **Create tiles → Create with AI**: de
 
 Open Create tiles in the manager, or extract creator-kit.zip. The kit contains the SDK, a starter project, Clock/Notes examples and the creator guide. Native tiles run with your Windows user's permissions; install packages from creators you trust.
 
-## Preview limits
+## Known limits
 
-This is an unsigned portable preview. Online marketplace hosting, publisher verification and a Windows installer are still planned. Simulated tests cover Tdarr recovery; this release was not verified by controlling a live encoding queue or rebooting Windows.
+Glance is unsigned and portable. Online marketplace hosting, publisher verification and a Windows installer are still planned. Simulated tests cover Tdarr recovery; this release was not verified by controlling a live encoding queue or rebooting Windows.

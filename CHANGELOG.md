@@ -1,3 +1,11 @@
+# Glance Platform 1.0.0
+
+The first full release. It includes everything from the 0.2 previews, Create with AI from 0.2.9, and a new icon set. The tiles are still based on Finance 2.6.6, LLM Usage 2.2.1 and Plex 2.3.0; their packages are version 1.0.0, so Marketplace offers them as updates to 0.2.x packages. Existing workspaces, settings, tile data and layouts are kept.
+
+- **New icons.** The black, mint and lavender icon set now appears beside tile names in Marketplace, My tiles, the desktop sidebar and tile details. The Platform G is used for the manager header, Glance.exe, the tray and shortcuts. Tiles without built-in artwork, including the ones you create, keep their initial.
+- **Plex tile icon.** The floating Plex tile's header and its options window show the Plex playback icon instead of the Platform G.
+- The portable folder name now starts with Glance-Platform-1.0.0 instead of "preview", and the folder includes Glance.ico for desktop shortcuts.
+
 # Glance tiles 0.2.9
 
 Create tiles without writing code. The tiles are unchanged: Finance 2.6.6, LLM Usage 2.2.1 and Plex 2.3.0; their packages are version 0.2.9.
