@@ -1,3 +1,10 @@
+# Glance Platform 1.1.1
+
+- **Start with Windows follows your workspace.** Turning Start with Windows on or off now works from any copy of Glance that opens the same workspace, such as the installed app after using a portable copy. If the startup entry points to a Glance that was moved or removed, Glance points it at the copy you are running the next time it opens.
+- **LLM Usage tile 1.1.3:** closing its options window no longer disposes the tile's icon, which could log "Cannot access a disposed object: Icon" and break the tile's window icon until restart. The options, provider and About windows each use their own copy of the usage-bars icon.
+- LLM Usage tile 1.1.2 restores the existing Codex desktop sign-in, including saved desktop connections. Account setup offers both desktop and separate browser sign-in. The desktop helper must have a valid OpenAI signature; persistent polling, clean shutdown, Claude timing and browser sign-in remain in place. The obsolete local retirement delay is cleared without clearing service cooldowns.
+- Finance and LLM Usage tile packages 1.1.1 use their approved trend-arrow and usage-bars artwork in options headers and window icons. The Platform G stays with the manager. The maintained tile sources and their provenance hashes are updated; standalone repositories are unchanged.
+
 # Glance Platform 1.1.0
 
 - **Platform updates:** Preferences checks the latest stable GitHub release. Install and restart downloads and verifies the release, waits for clean tile shutdown, and keeps the current workspace. Portable updates retain a backup and roll back file replacement failures; installed copies use setup.
