@@ -1,3 +1,9 @@
+# Glance Platform 1.2.0
+
+- **Plex tile 1.2.0 shows CPU and GPU temperatures** beside the CPU and GPU percentages in the Tdarr section. The GPU temperature is the one Windows itself reports, the same value Task Manager shows (graphics drivers from 2018 on). Windows has no built-in CPU temperature, so the CPU temperature appears only while HWiNFO (with Shared Memory Support turned on) or LibreHardwareMonitor is running. Glance installs no drivers. Temperatures use °F when Windows is set to a non-metric region, otherwise °C. When no source reports a temperature, nothing is shown.
+- Uninstalling or updating no longer fails with "Glance could not finish closing" when a Glance process is exiting at the moment it is checked.
+- Folders left by Platform updates (the download, extracted copies and the backup of replaced files) are removed after two weeks.
+
 # Glance Platform 1.1.1
 
 - **Start with Windows follows your workspace.** Turning Start with Windows on or off now works from any copy of Glance that opens the same workspace, such as the installed app after using a portable copy. If the startup entry points to a Glance that was moved or removed, Glance points it at the copy you are running the next time it opens.
