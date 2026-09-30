@@ -1,12 +1,12 @@
 # Glance Platform
 
-Glance puts independent, movable desktop tiles under one manager. Glance Platform 1.2 includes Finance, LLM Usage and Plex, plus Clock and Notes examples.
+Glance puts independent, movable desktop tiles under one manager. Glance Platform 1.3 includes Finance, LLM Usage and Plex, plus Clock and Notes examples.
 
 ## Start
 
-Windows 10/11 with .NET Framework 4.8 is required. Download **Glance-Platform-1.2.0-Setup.exe** from the release page and run it. Setup installs for your Windows account and offers a desktop shortcut. Glance appears in Windows **Installed apps / Add or remove programs**. Uninstall removes program files and shortcuts while keeping saved tile data.
+Windows 10/11 with .NET Framework 4.8 is required. Download **Glance-Platform-1.3.0-Setup.exe** from the release page and run it. Setup installs for your Windows account and offers a desktop shortcut. Glance appears in Windows **Installed apps / Add or remove programs**. Uninstall removes program files and shortcuts while keeping saved tile data.
 
-For a portable copy, download the Windows ZIP, extract the entire folder, and run Start Glance.cmd. Keep Glance.exe, Glance.TileSdk.dll and the other files together. Neither option requires administrator installation.
+For a portable copy, download the Windows ZIP, extract the entire folder, and run Start Glance.cmd. Keep Glance.exe, Glance.TileSdk.dll and the other files together. The included CPU sensor component requires Windows administrator permission. Setup installs it automatically; portable copies request permission on their first normal launch.
 
 Try Glance.cmd opens a separate sample workspace. Its Finance, Usage and Plex tiles use synthetic data. Your normal workspace is separate.
 
@@ -18,13 +18,15 @@ Settings opens the tile's original options window. The more menu provides Tile s
 
 Drag a tile to move it. Right-click for lock, pin, refresh and options. Finance supports multiple chart windows in one tile package. Usage and Plex fit their contents without host title bars.
 
+Scale tiles from 75% to 200% in their options: Finance → Desktop → Scale each tile (or right-click a chart → Tile scale); Usage → Appearance; Plex → Playback → On your widget, then Save options; Clock and Notes → Tile settings → Tile scale, then Save changes. Each setting is saved independently.
+
 Minimize or close the manager to leave tiles running beside the clock in the system tray. Double-click the tray icon to restore the manager. Choose Quit Glance from the tray to stop all tiles.
 
 ## Connect data
 
 - Finance retains charts, portfolio records, local calendar events, saved setups and its original appearance controls.
 - LLM Usage offers the original account connection options. Connect only the providers you want. Codex uses a persistent helper; Claude has 5/10/15-minute refresh choices and respects service retry deadlines.
-- Plex retains its connection, activity, hardware and optional Tdarr controls. Configure its connections in Settings. The Tdarr section shows CPU and GPU temperatures when available: GPU readings come from Windows, and CPU readings require HWiNFO with Shared Memory Support or LibreHardwareMonitor running. Temperatures follow your Windows region; unavailable readings stay hidden. Avoid giving two running Glance Plex instances control over the same Tdarr work.
+- Plex retains its connection, activity, hardware and optional Tdarr controls. Configure its connections in Settings. The Tdarr section shows CPU and GPU temperatures when available: GPU readings come from Windows, and CPU readings come from the included Glance CPU Sensor service on supported AMD Zen and Intel PCs. No separate monitoring app is required. If setup was cancelled, use Preferences → Repair CPU temperature. Temperatures follow your Windows region; unavailable readings stay hidden. Avoid giving two running Glance Plex instances control over the same Tdarr work.
 
 Fresh installations have no accounts or personal data. Tile data is stored locally under %LOCALAPPDATA%\Glance\Platform\data. The sample workspace uses PlatformTryout. Removing a tile retains its private data for recovery.
 
@@ -45,3 +47,4 @@ Open Create tiles in the manager, or extract creator-kit.zip. The kit contains t
 ## Known limits
 
 Glance's installer and portable app are unsigned. Online marketplace hosting and publisher verification are still planned. Simulated tests cover Tdarr recovery; this release was not verified by controlling a live encoding queue or rebooting Windows.
+CPU support installs as Glance CPU Sensor in Windows Installed apps, separately from the per-user Platform app. Its elevated service runs from Program Files and only shares CPU temperature with local readers. Uninstall Glance CPU Sensor there if no longer needed; its uninstaller preserves the shared PawnIO driver for other programs. Unsupported sensors remain unavailable; no Windows security setting needs to be disabled.

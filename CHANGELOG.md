@@ -1,3 +1,12 @@
+# Unreleased
+
+# Glance Platform 1.3.0
+
+- **CPU temperature without a separate monitoring app.** Setup includes Glance CPU Sensor and the signed PawnIO driver. Approve the Windows administrator prompt during installation; the sensor service then starts with Windows and Plex reads it automatically. Portable copies set up the same component on first normal launch. Supported AMD Zen and Intel digital thermal sensors report temperature; unsupported or blocked sensors stay blank. GPU readings still come from Windows. Temperature units follow your Windows region.
+- **Scale each tile from 75% to 200%.** Finance has an independent slider for each chart under Desktop and in its right-click Tile scale menu. LLM Usage has its slider under Appearance; Plex has it under Playback / On your widget. Clock and Notes use their tile settings. Text and contents scale with the tile, and the setting is saved.
+- **Platform updates include bundled tile updates.** Newer bundled tiles apply on restart when their automatic-update preference is enabled, preserving settings, placement and private data. Finance, Usage, Clock and Notes are version 1.3.0; Plex is 1.3.1 so it also replaces the earlier manual sensor test package.
+- **Simpler release preparation.** One command builds and checks the candidate, then packages those same files. Release tags no longer trigger a redundant build.
+
 # Glance Platform 1.2.0
 
 - **Plex tile 1.2.0 shows CPU and GPU temperatures** beside the CPU and GPU percentages in the Tdarr section. The GPU temperature is the one Windows itself reports, the same value Task Manager shows (graphics drivers from 2018 on). Windows has no built-in CPU temperature, so the CPU temperature appears only while HWiNFO (with Shared Memory Support turned on) or LibreHardwareMonitor is running. Glance installs no drivers. Temperatures use °F when Windows is set to a non-metric region, otherwise °C. When no source reports a temperature, nothing is shown.
