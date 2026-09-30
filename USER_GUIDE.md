@@ -4,7 +4,7 @@ Glance puts independent, movable desktop tiles under one manager. Glance Platfor
 
 ## Start
 
-Windows 10/11 with .NET Framework 4.8 is required. Download **Glance-Platform-1.3.0-Setup.exe** from the release page and run it. Setup installs for your Windows account and offers a desktop shortcut. Glance appears in Windows **Installed apps / Add or remove programs**. Uninstall removes program files and shortcuts while keeping saved tile data.
+Windows 10/11 with .NET Framework 4.8 is required. Download **Glance-Platform-1.3.1-Setup.exe** from the release page and run it. Setup installs for your Windows account and offers a desktop shortcut. Glance appears in Windows **Installed apps / Add or remove programs**. Uninstall removes program files and shortcuts while keeping saved tile data.
 
 For a portable copy, download the Windows ZIP, extract the entire folder, and run Start Glance.cmd. Keep Glance.exe, Glance.TileSdk.dll and the other files together. The included CPU sensor component requires Windows administrator permission. Setup installs it automatically; portable copies request permission on their first normal launch.
 
@@ -26,7 +26,7 @@ Minimize or close the manager to leave tiles running beside the clock in the sys
 
 - Finance retains charts, portfolio records, local calendar events, saved setups and its original appearance controls.
 - LLM Usage offers the original account connection options. Connect only the providers you want. Codex uses a persistent helper; Claude has 5/10/15-minute refresh choices and respects service retry deadlines.
-- Plex retains its connection, activity, hardware and optional Tdarr controls. Configure its connections in Settings. The Tdarr section shows CPU and GPU temperatures when available: GPU readings come from Windows, and CPU readings come from the included Glance CPU Sensor service on supported AMD Zen and Intel PCs. No separate monitoring app is required. If setup was cancelled, use Preferences → Repair CPU temperature. Temperatures follow your Windows region; unavailable readings stay hidden. Avoid giving two running Glance Plex instances control over the same Tdarr work.
+- Plex retains its connection, activity, hardware and optional Tdarr controls. Configure its connections in Settings. The Tdarr section shows CPU and GPU temperatures when available: GPU readings come from Windows, and CPU readings come from the included Glance CPU Sensor service on supported AMD Zen and Intel PCs. No separate monitoring app is required. If setup was cancelled, use Preferences → Repair CPU temperature. Temperatures show Celsius to the left of Fahrenheit; unavailable readings stay hidden. Avoid giving two running Glance Plex instances control over the same Tdarr work.
 
 Fresh installations have no accounts or personal data. Tile data is stored locally under %LOCALAPPDATA%\Glance\Platform\data. The sample workspace uses PlatformTryout. Removing a tile retains its private data for recovery.
 

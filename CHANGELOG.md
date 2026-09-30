@@ -1,5 +1,10 @@
 # Unreleased
 
+# Glance Platform 1.3.1
+
+- **Celsius alongside Fahrenheit.** Plex shows both CPU and GPU temperatures with Celsius on the left, such as 54°C 129°F, beside the usage percentage. Unavailable readings stay hidden. Included Plex tile version: 1.3.2.
+- **Focused publishing checks.** Routine releases verify startup, saved data, updates, package integrity and installation. Broader provider, Tdarr and hardware suites remain available for relevant changes and manual runs.
+
 # Glance Platform 1.3.0
 
 - **CPU temperature without a separate monitoring app.** Setup includes Glance CPU Sensor and the signed PawnIO driver. Approve the Windows administrator prompt during installation; the sensor service then starts with Windows and Plex reads it automatically. Portable copies set up the same component on first normal launch. Supported AMD Zen and Intel digital thermal sensors report temperature; unsupported or blocked sensors stay blank. GPU readings still come from Windows. Temperature units follow your Windows region.
