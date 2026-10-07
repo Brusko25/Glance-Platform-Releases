@@ -1,5 +1,25 @@
 # Unreleased
 
+# Glance Platform 1.4.0
+
+- **A shared tile family:** every bundled tile now uses Finance-style options chrome, horizontal tabs, a common Style tab and the same Desktop controls. Provider connections, portfolios, chart layouts, notes and location settings remain local and separate from style.
+- **Compact or Classic:** select the flat, data-first look or the original rounded Glance look for Finance, LLM Usage, Plex, Investments, Weather, Clock and Notes. Compact Usage omits decorative bars and shortens rows; compact Plex removes routine checked-at footer text while retaining errors and overflow notices. Details remain available on hover.
+- **Make the surface yours:** choose theme, black, charcoal, navy, paper or a custom background; square, soft or rounded corners; no border, subtle outline, accent or custom border colour; and 1–4 pixel borders. Text and semantic status colours adapt to light backgrounds.
+- **Apply to all tiles:** the Style tab previews changes before applying to this tile or every installed tile, including disabled tiles. This copies only appearance. Each tile can still be customized independently afterward.
+- **One right-click menu:** Options, Style, Refresh, desktop placement controls, Hide, Open Glance and Disable appear in the same order. Finance keeps chart commands under Tile actions; Notes keeps its editing commands there.
+- **Weather is maintained with Platform:** the current compact 10-day weather tile, international location search, units and source credits are included in the maintained source and package build. Existing weather tile identity and saved settings are retained.
+- Included package versions: Finance, Usage, Plex, Clock and Notes 1.4.0; Investments and Weather 1.1.0. Platform 1.4.0 keeps SDK ABI version 1 and adds optional family UI/style extensions.
+
+- **Investments 1.0.4:** adds optional Voya auto-sync using your own Plaid Investments account. New Voya options open browser approval, preserve and reuse pending connections, support reconnect/disconnect, and check saved balances hourly. Credentials and data are encrypted locally; failed reads keep labeled saved values. Webull and manual Voya entries are preserved. Trial eligibility and Voya plan support depend on Plaid; no paid-plan upgrade or forced Investments Refresh is performed.
+
+- **Investments 1.0.3:** automatically fits the desktop tile to compact rows, removing unused bottom space. Adds signed, color-coded Open P/L beside the Webull total and each position value. Open P/L sums Webull's reported unrealized position gains/losses, excludes cash, and stays unavailable when any position is missing a figure.
+
+- **Investments 1.0.2:** combines Webull cash across accounts into one row and uses Webull's name and total as the holdings heading. Removes the repeated Webull summary and attribution footer. The tile is shorter, with a compact combined total shown once both balances are available; Voya fund details remain in options.
+
+- **Investments 1.0.1:** fixes blank BTC values when Webull omits the crypto position's currency. Crypto can inherit its confirmed USD account currency, and holdings prefer Webull's reported market value. Account totals are unchanged.
+
+- **Investments tile:** combine Webull account balances and holdings with manually maintained Voya retirement investments. Webull uses its official US API with local encrypted credentials, optional two-step verification and adjustable refresh timing. Missing balances remain unavailable; failed syncs retain labeled saved values. Voya includes a balance date and optional fund holdings. API access must be approved by Webull before connecting.
+
 # Glance Platform 1.3.1
 
 - **Celsius alongside Fahrenheit.** Plex shows both CPU and GPU temperatures with Celsius on the left, such as 54°C 129°F, beside the usage percentage. Unavailable readings stay hidden. Included Plex tile version: 1.3.2.
