@@ -2,15 +2,16 @@
 
 One manager for clean, movable desktop tiles.
 
-**[Download Glance Platform 1.4.0](https://github.com/Brusko25/Glance-Platform-Releases/releases/tag/v1.4.0)** · [User guide](USER_GUIDE.md) · [Release notes](CHANGELOG.md)
+**[Download Glance Platform 1.4.1](https://github.com/Brusko25/Glance-Platform-Releases/releases/tag/v1.4.1)** · [User guide](USER_GUIDE.md) · [Release notes](CHANGELOG.md)
 
 Glance Platform brings Finance, LLM Usage, Plex, Investments, Weather, Clock and Notes into a shared desktop tile system. Tiles have matching options and right-click menus and run independently. The manager handles installation, placement, the tray and a local Marketplace.
 
 ## Get started
 
-1. Download **Glance-Platform-1.4.0-Setup.exe** from the release page.
+1. Download **Glance-Platform-1.4.1-Setup.exe** from the release page.
 2. Run setup to install Glance for your Windows account, with a Start menu entry and an optional desktop shortcut.
-3. Approve the Windows administrator prompt for the bundled CPU sensor, then open Glance and install the tiles you want from Marketplace.
+3. If Windows asks for administrator permission for the bundled CPU sensor, approve it to show CPU temperature in Plex. Glance installs either way, and you can add the sensor later with Preferences → Repair CPU temperature.
+4. Open Glance from the Start menu or its shortcut and install the tiles you want from Marketplace.
 
 Prefer a portable copy? Download the Windows ZIP, extract the entire folder, and run Start Glance.cmd. Try Glance.cmd opens sample tiles in a separate workspace.
 
@@ -27,7 +28,7 @@ Requires Windows 10/11 and .NET Framework 4.8. The installer and portable ZIP ar
 | Local Weather | Worldwide city or postal-code search, current conditions and a 10-day forecast |
 | Clock and Notes | Local time and a saved scratchpad |
 
-Finance, LLM Usage, Plex, Clock and Notes are version 1.4.0; Investments and Weather are version 1.1.0. The installer and Windows ZIP include all seven tile packages. Separate Finance, Usage and Plex packages, a creator kit in the ZIP, and SHA-256 checksums are also provided.
+Finance, LLM Usage, Clock and Notes are version 1.4.0; Plex is version 1.4.1; Investments and Weather are version 1.1.1. The installer and Windows ZIP include all seven tile packages. Separate Finance, Usage and Plex packages, a creator kit in the ZIP, and SHA-256 checksums are also provided.
 
 **Preferences → Platform updates** checks GitHub for the main app. **My tiles → Update all installed tiles** installs newer bundled or local catalog packages while preserving settings and positions. Platform updates refresh existing Glance shortcut icons and apply newer bundled tiles when their automatic-update preference is enabled.
 

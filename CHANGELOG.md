@@ -1,4 +1,15 @@
-# Unreleased
+# Glance Platform 1.4.1
+
+- **Updating Glance no longer asks for administrator permission every time.** Setup only installs the CPU sensor when it is missing or out of date. If you decline the Windows prompt, or your account isn't an administrator, Glance still installs or updates; CPU temperature can be added later with Preferences → Repair CPU temperature. The sensor and its driver are no longer installed on processors they can't read, and the Glance window no longer freezes while CPU temperature is being set up.
+- **Tiles stay on after Windows restarts.** Tiles that were running when Windows shut down start again at your next sign-in. Glance could previously save them as turned off while Windows was ending the session.
+- **Marketplace stays usable when a tile's files are damaged.** A missing, oversized or damaged manifest, a missing entry DLL, or valid JSON with damaged values no longer hides the catalog. The affected tile offers Repair, which restores its files from the catalog package and keeps its settings, saved data and position. Installing over a leftover package folder now works instead of saying the tile is already installed; the old folder is kept.
+- **Safer updates and repairs.** If an install, update or repair fails and Glance can't fully undo it, the message says what happened and where the earlier files are kept. Staging cleanup keeps a replaced package while its tile has no readable package. A broken tile no longer hides update notices for the others, and a read-only log file can no longer stop Glance from starting.
+- **One Glance workspace.** Glance won't open its workspace, or install a Platform update, when it is started from inside an app that Windows gives a private copy of AppData, such as the Codex desktop app. Glance checks where its files really are, so this works even when Windows doesn't report that the app started it. Start Glance from the Start menu or its shortcut.
+- **Style and menus:** Style reports "applied" only after Glance confirms it saved that change, and says so if it couldn't, including when copying a tile's current style to all tiles. A tile's own right-click actions (such as Notes editing) no longer linger in later menus. Dragging tiles with snapping is smoother.
+- **Weather 1.1.1:** Cancel and Escape close Weather options, and a newly chosen location loads straight away.
+- **Investments 1.1.1:** if saved investments can't be opened on this PC (for example after a Windows account change), Options offers Start over. The unreadable file is moved aside in the tile's data folder, never deleted. Fields are locked while an action runs.
+- **Plex 1.4.1:** the compact layout keeps its footer and Tdarr row in place when Plex is slow to answer.
+- Included package versions: Finance, Usage, Clock and Notes 1.4.0; Plex 1.4.1; Investments and Weather 1.1.1.
 
 # Glance Platform 1.4.0
 

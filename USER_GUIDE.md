@@ -4,9 +4,11 @@ Glance puts independent, movable desktop tiles under one manager. Glance Platfor
 
 ## Start
 
-Windows 10/11 with .NET Framework 4.8 is required. Download **Glance-Platform-1.4.0-Setup.exe** from the release page and run it. Setup installs for your Windows account and offers a desktop shortcut. Glance appears in Windows **Installed apps / Add or remove programs**. Uninstall removes program files and shortcuts while keeping saved tile data.
+Windows 10/11 with .NET Framework 4.8 is required. Download **Glance-Platform-1.4.1-Setup.exe** from the release page and run it. Setup installs for your Windows account and offers a desktop shortcut. Glance appears in Windows **Installed apps / Add or remove programs**. Uninstall removes program files and shortcuts while keeping saved tile data.
 
-For a portable copy, download the Windows ZIP, extract the entire folder, and run Start Glance.cmd. Keep Glance.exe, Glance.TileSdk.dll and the other files together. The included CPU sensor component requires Windows administrator permission. Setup installs it automatically; portable copies request permission on their first normal launch.
+For a portable copy, download the Windows ZIP, extract the entire folder, and run Start Glance.cmd. Keep Glance.exe, Glance.TileSdk.dll and the other files together. The included CPU sensor component requires Windows administrator permission. Setup installs or updates it only when needed; if you decline that prompt, Glance still installs, and you can add CPU temperature later with Preferences → Repair CPU temperature. Portable copies request permission on their first normal launch.
+
+Open Glance from the Start menu or its desktop shortcut. If another app starts Glance inside its own private copy of AppData (some developer tools do), Glance says so and doesn't open, so it never works on a separate copy of your tiles.
 
 Try Glance.cmd opens a separate sample workspace. Its Finance, Usage and Plex tiles use synthetic data. Your normal workspace is separate.
 
@@ -56,7 +58,7 @@ CPU support installs as Glance CPU Sensor in Windows Installed apps, separately 
 
 Right-click a tile and choose **Options…**, then **Style**, or choose **Style…** directly from its menu. **Compact** uses dense rows, a flat surface and small headings. **Classic** uses the rounded Glance presentation and roomier details. Both keep your information available.
 
-Choose the background, corner shape, border style, colour and thickness. The preview changes first; **Apply to this tile** saves only this tile, and **Apply to all tiles** gives every installed tile the same appearance, including tiles currently turned off. Applying a style leaves accounts, notes, locations and desktop positions unchanged. You can customize a tile independently afterward.
+Choose the background, corner shape, border style, colour and thickness. The preview changes first; **Apply to this tile** saves only this tile, and **Apply to all tiles** gives every installed tile the same appearance, including tiles currently turned off. The Style tab says a style was applied only after Glance has saved it, and tells you if it couldn't. Applying a style leaves accounts, notes, locations and desktop positions unchanged. You can customize a tile independently afterward.
 
 Every bundled tile uses Finance-style options with a branded header and horizontal tabs. Its own content controls come first, followed by **Style** and **Desktop**. Desktop controls save immediately. Finance keeps chart sizes and arrangements under **Layout**, Usage keeps provider display choices under **Display**, and Plex keeps playback-specific display controls with playback.
 
