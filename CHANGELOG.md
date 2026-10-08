@@ -1,3 +1,14 @@
+# Unreleased
+
+# Glance Platform 1.4.2
+
+- Weather and Investments 1.1.2 now follow Finance's options layout: rounded section cards, consistent typography and spacing, aligned fields and a fixed footer. Weather groups location search and forecast preferences; Investments groups Webull, Voya, verification and holdings. Pages fit narrow windows without horizontal scrolling, and account connections and saved values are preserved.
+- Weather and Investments have matching black, lavender and mint icons in Platform and their options. Investments uses a dollar sign behind rising bars.
+- All seven tile options use the Platform header proportions, transparent icon edges and dark Windows title bars. Platform and tile options use native dark scrollbars and matching input borders, while retaining native scrolling and keyboard behavior. Light surfaces and Windows high contrast keep native decoration.
+- Scrollbars keep one consistent appearance during scrolling and dragging. Removed a second drawing layer that was alternating with Windows' own scrollbar renderer.
+- Installed tile IDs and private data are unchanged; the updated Weather and Investments packages retain existing settings and credentials.
+- Included package versions: Finance, Usage, Clock and Notes 1.4.0; Plex 1.4.1; Investments and Weather 1.1.2. The shared options appearance is supplied by Platform 1.4.2.
+
 # Glance Platform 1.4.1
 
 - **Updating Glance no longer asks for administrator permission every time.** Setup only installs the CPU sensor when it is missing or out of date. If you decline the Windows prompt, or your account isn't an administrator, Glance still installs or updates; CPU temperature can be added later with Preferences → Repair CPU temperature. The sensor and its driver are no longer installed on processors they can't read, and the Glance window no longer freezes while CPU temperature is being set up.
