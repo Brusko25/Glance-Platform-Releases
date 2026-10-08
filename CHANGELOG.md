@@ -1,5 +1,10 @@
 # Unreleased
 
+# Glance Platform 1.4.4
+
+- All tile options use the darker Codex card color, including their leading cards. Usage keeps the same rounded corners and outlines as the other tiles when pages refresh or resize. Section titles and tabs capitalize every word, including Live Usage, Provider Websites and Find Your Local Weather. Finance 1.4.1, Usage 1.4.2, Plex 1.4.3, Weather 1.1.3 and Investments 1.1.4 preserve existing settings and connections.
+- Included package versions: Finance 1.4.1, Usage 1.4.2, Plex 1.4.3, Weather 1.1.3, Investments 1.1.4, and Clock and Notes 1.4.0. The installer and portable ZIP include all seven tiles.
+
 # Glance Platform 1.4.2
 
 - Weather and Investments 1.1.2 now follow Finance's options layout: rounded section cards, consistent typography and spacing, aligned fields and a fixed footer. Weather groups location search and forecast preferences; Investments groups Webull, Voya, verification and holdings. Pages fit narrow windows without horizontal scrolling, and account connections and saved values are preserved.
