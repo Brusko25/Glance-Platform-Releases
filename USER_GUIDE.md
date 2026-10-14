@@ -1,10 +1,10 @@
 # Glance Platform
 
-Glance puts independent, movable desktop tiles under one manager. Glance Platform 1.4 includes Finance, LLM Usage, Plex, Investments, Weather, Clock and Notes, with shared options, styles and right-click menus.
+Glance puts independent, movable desktop tiles under one manager. Glance Platform 1.4.13 includes Finance, LLM Usage, Plex, Investments, Weather, Clock, Notes and the optional Liquid Icons tile, with shared options, styles and right-click menus.
 
 ## Start
 
-Windows 10/11 with .NET Framework 4.8 is required. Download **Glance-Platform-1.4.4-Setup.exe** from the release page. If Glance is running, choose Quit Glance before running Setup. Setup installs for your Windows account and offers a desktop shortcut. Glance appears in Windows **Installed apps / Add or remove programs**. Uninstall removes program files and shortcuts while keeping saved tile data.
+Windows 10/11 with .NET Framework 4.8 is required. Download **Glance-Platform-1.4.13-Setup.exe** from the release page. If Glance is running, choose Quit Glance before running Setup. Setup installs for your Windows account and offers a desktop shortcut. Glance appears in Windows **Installed apps / Add or remove programs**. Uninstall removes program files and shortcuts while keeping saved tile data.
 
 For a portable copy, download the Windows ZIP, extract the entire folder, and run Start Glance.cmd. Keep Glance.exe, Glance.TileSdk.dll and the other files together. The included CPU sensor component requires Windows administrator permission. Setup installs or updates it only when needed; if you decline that prompt, Glance still installs, and you can add CPU temperature later with Preferences → Repair CPU temperature. Portable copies request permission on their first normal launch.
 
@@ -19,6 +19,8 @@ Browse Marketplace to install a bundled tile or import a .glancetile file. Enabl
 Settings opens the tile's options window, with its own content controls followed by shared Style and Desktop tabs. The more menu provides Tile setup, including live or sample data mode where supported. Changing this mode restarts the tile.
 
 Drag a tile to move it. Right-click for lock, pin, refresh and options. Finance supports multiple chart windows in one tile package. Usage and Plex fit their contents without host title bars.
+
+In Platform's **Desktop** tab, **Lock All Tiles** keeps every installed tile in place, including all Finance charts. **Unlock All Tiles** lets you move them again. These choices are saved for tiles that are currently off too. Locking doesn't stop updates or change the layout.
 
 Scale tiles from 75% to 200% in their options: Finance → Layout → Scale each tile (or right-click a chart → Tile actions → Tile scale); Usage → Display; Plex → Playback → On your widget, then Save options. Clock, Notes, Investments and Weather have their Tile scale slider under Desktop. Each setting is saved independently.
 
@@ -60,6 +62,16 @@ Right-click a tile and choose **Options…**, then **Style**, or choose **Style�
 
 Choose the background, corner shape, border style, colour and thickness. The preview changes first; **Apply to this tile** saves only this tile, and **Apply to all tiles** gives every installed tile the same appearance, including tiles currently turned off. The Style tab says a style was applied only after Glance has saved it, and tells you if it couldn't. Applying a style leaves accounts, notes, locations and desktop positions unchanged. You can customize a tile independently afterward.
 
-Every bundled tile uses Finance-style options with a branded header and horizontal tabs. Its own content controls come first, followed by **Style** and **Desktop**. Desktop controls save immediately. Finance keeps chart sizes and arrangements under **Layout**, Usage keeps provider display choices under **Display**, and Plex keeps playback-specific display controls with playback.
+**Merge Snapped Tiles** is on by default for the bundled tiles. With snapping enabled, drag two tile edges together: the touching borders dissolve and their corners fill in over one second. Only the outside edges remain outlined, with matching curves around inward corners. Pull a tile away to restore its own frame. Tiles keep their individual colours, sizes and content; use **Apply to all tiles** for a uniform surface. Under **Merge Animation**, choose **Follow Windows**, **On · 1 Second**, or **Off**. On enables the effect only in Glance even when Windows animations are disabled. High contrast still skips the transition. Turn merging off in Style to retain separate frames.
+
+Bundled tiles use Finance-style options with a branded header and horizontal tabs. Movable tiles have **Style** and **Desktop** tabs after their own content controls. Desktop controls save immediately. Finance keeps chart sizes and arrangements under **Layout**, Usage keeps provider display choices under **Display**, and Plex keeps playback-specific display controls with playback.
+
+### Liquid Icons
+
+Install **Liquid Icons** from Marketplace and enable it in My Tiles. It is a separate optional tile that puts rounded liquid or glass backgrounds behind your existing desktop icons and labels. Nearby backgrounds flow together. Windows still handles opening, dragging, selection, menus and renaming.
+
+Open Liquid Icons **Settings**. **Appearance** chooses the material (Liquid or Glass), color, edge softness and opacity, plus the droplet rim for Liquid. **Glass** has presets from Clear to Black, plus Neon, and adjusts tint, frost, shine, gloss, edge depth and thickness, shadow, glow and the light direction. Glass doesn't read the wallpaper, so animated wallpapers keep playing underneath. **Shape And Motion** sets the shape, size, padding, roundness, join reach and settle time, and **Drop Jiggle**: how much the liquid wobbles when you drop an icon next to others (click the preview to see it; 0 turns it off). Motion can be disabled. Each page previews changes until you choose **Save Changes**. Disable Liquid Icons or use **Hide All Tiles** to remove its backgrounds; the wallpaper and icon positions remain yours. The surface stays attached to the desktop, so it has no movable frame, pinning or global tile style controls, and Lock All Tiles does not lock your Windows icons.
+
+Requires Platform 1.4.10 and the layered desktop icon view in modern Windows 11. It reads icon rectangles only, keeps positions in memory, and does not read shortcut targets or file contents. If the desktop layout is unsupported, its status explains that and no backgrounds are drawn.
 
 The right-click menu follows the same order across tiles. Finance's chart controls and Notes' text-editing commands are under **Tile actions**.
