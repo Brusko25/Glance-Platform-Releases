@@ -1,5 +1,25 @@
 # Unreleased
 
+# Glance Platform 1.4.14
+
+- Included package versions: Finance 1.4.4, Usage 1.4.7, Plex 1.4.5, Investments 1.1.18, Weather 1.1.4, Clock and Notes 1.4.1, and Liquid Icons 1.3.1. The installer and portable ZIP include all eight tiles.
+
+- Liquid Icons 1.3.0 makes the glass sharp and clean: a crisp bright rim, a glossy reflection that hugs the edge facing the light, a thin darker line on the shaded side and a small glint opposite, with no milky haze. Glass edges stay crisp (Edge Softness only feathers them slightly), and the presets and the default glass are clearer and shinier. Dropping an icon is now a liquid snap: while dragged, its droplet is lifted out of the pool and barely joins its neighbours; when it lands it snaps in with a fuller bridge that settles, and it jiggles while the joined pool ripples. The default Drop Jiggle is stronger (70), and the options preview plays the whole drop. The Liquid look is unchanged.
+
+- Usage 1.4.6: Claude connects again with current Claude desktop versions. Claude now keeps its sign-in in `%LOCALAPPDATA%\Claude-Data`, and the tile only looked in the two older folders, so after a fresh install or a Claude update it showed "Cannot read Claude's saved sign-in". The tile now checks all three, the most recently updated first, so a stale copy left in an older folder can't hide the live sign-in, and a token store Claude left empty or unreadable no longer blocks the one that works. When Claude still can't be read, the message says what to do: install Claude desktop, sign in, sign out and back in, renew an expired sign-in, or check for a Glance update if Claude has changed its format. A folder set in Accounts is still used exactly as given.
+
+- Usage 1.4.6: near-live usage. Claude can be checked every **10 seconds** (also 30 seconds or 1 minute, alongside 5, 10 and 15), independently of the Codex interval, which now also offers 10 and 30 seconds. A "too many requests" answer from Anthropic still pauses checks for as long as it asks, then the chosen interval resumes. Each provider shows how old its reading is (for example "7s ago"). The default intervals are unchanged.
+
+- Usage 1.4.7 checks Claude every **minute** by default (before, every 5 minutes). At one minute, an occasional "too many requests" pause from Anthropic is caught up by the next check, so the reading stays fresh; 10 and 30 seconds remain available but are paused by those cooldowns much more often. A Claude interval you already chose is kept. This also brings the clearer Claude timing text to PCs that already had a 1.4.6 test build.
+
+- Platform 1.4.14: master and per-tile settings. The Glance window has new **Style** and **Desktop** tabs that are the master settings for every tile: choose a look or desktop behavior (lock position, always on top, snap, click-through, opacity) and **Apply to all tiles**, including disabled tiles; tiles installed later start with it. A tile's own Style and Desktop tabs now change only that tile and link to the master tabs. **Preferences** is renamed **Settings** and adds Start Glance with Windows and the desktop shortcut. The **···** menu on each tile in My tiles now matches the tile's right-click menu (Options, Style, Refresh, Lock, Always on top, Snap, Move to display, Show, Hide, Enable/Disable), then Tile setup and Remove; its **Settings** button is now **Options**, and all Glance menus share one look. The master pages keep **Apply to all tiles** in view at any window size and display scaling, and the links from a tile's Options bring the Glance window to the front without un-maximizing it.
+
+- New installs start with a ready look. On a brand-new Glance workspace, every tile you add starts in the classic style (black background, subtle purple border, rounded corners); before, only Finance, Usage and Plex did and the other tiles started compact. Existing workspaces keep their styles. The master Style tab still changes it for every tile.
+
+- Liquid Icons 1.3.1 starts new installs with a fuller look: pill-shaped backgrounds at 120% size and 92% opacity with a crisp edge, a glossy droplet rim (18%, width 11), a slower 200 ms settle and full-strength drop jiggle (100). The Glass default is lightly frosted with a deep teal tint. Existing settings are kept exactly; saved settings missing a value still use the original look.
+
+- Platform 1.4.14: updating Glance always brings the newer bundled tiles it ships. Before, a PC that had already run a test build of the same Platform version skipped them, which is why some PCs kept Liquid Icons 1.1.3 after installing 1.4.13. The bundled-tile check now also compares the tile versions inside the installation, so it runs once after this update; tiles whose automatic updates are turned off are still left alone.
+
 # Glance Platform 1.4.13
 
 - Included package versions: Finance 1.4.4, Usage 1.4.4, Plex 1.4.5, Investments 1.1.18, Weather 1.1.4, Clock and Notes 1.4.1, and Liquid Icons 1.2.0. The installer and portable ZIP include all eight tiles.
