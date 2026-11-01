@@ -1,5 +1,37 @@
 # Unreleased
 
+# Glance Platform 1.5.0
+
+- Included package versions: Finance 1.4.5, Usage 1.4.9, Plex 1.4.7, Investments 1.2.0, Weather 1.1.4, Clock and Notes 1.4.1, Liquid Icons 1.3.4 and Storage 1.0.0. The installer and portable ZIP include all nine tiles.
+
+- New **About** tab in the Glance window: the Platform version, every installed tile with its version and whether it is on, links to the release notes and user guide, and the data folder on this PC.
+
+- Liquid Icons 1.3.4 reworks glass color. Glass Color and its new **Color Strength** sit together on the Appearance page: 0% is clear glass, 100% is solid color in any color, and solid black is obsidian. Low strengths now show the color clearly (it used to be too faint to notice), and Frost only clouds the see-through part, so solid glass keeps its true color. New presets: Tinted and Solid use your chosen color; Obsidian (replacing Black) is solid black glass. Saved settings keep their values.
+
+- Resize an unlocked tile from any side or corner: left, right, top, bottom or diagonally (the pointer changes to a resize arrow). A dragged side snaps to nearby tiles and screen edges. Tiles that fit their content zoom as a whole, from 75% to 200% in 5% steps, and the side opposite the one you drag stays put; each tile keeps its own size. For LLM Usage and Plex the drag changes their own Tile scale setting. Lock position also locks the size. Finance charts resize from their sides as well as their corners (Finance 1.4.5).
+
+- Moving a tile snaps it to the screen edges of every monitor, the divide between two monitors and the edge of the taskbar, as well as to other tiles. Finance charts snap the same way. Usage 1.4.9 and Plex 1.4.7 share the updated snapping code.
+
+- The Style page (in the Glance window and in each tile's Style tab) is rebuilt as one page without a scrolling box inside it: Shape, Background, Border and Snapped tiles in short groups, colour chips for the background shortcuts, and the live preview beside them. Apply stays in the bar at the bottom. Drop-down lists on the Style and Desktop pages use the dark Glance look.
+
+- Fixed: Lock position in a tile's right-click menu did nothing after Glance had sent the tile its settings. Turning Snap off in the menu now separates a merged tile at once.
+
+- Fixed: a thin line of desktop showed through where two merged tiles of different widths meet.
+
+- New installs: Finance starts with Snap to grid on.
+
+- New tile: **Storage 1.0.0** shows each internal and USB drive in the same compact layout as LLM Usage: its name, a usage bar and its free space ("412 GB free of 1.8 TB", sizes as File Explorer shows them). Bars turn amber at 80% used and red at 90%. Hover a drive for its format, type and exact usage. Plugging in or removing a USB drive updates the tile within a few seconds; free space refreshes every minute (10 seconds to an hour in Options). Options can hide drives or leave out USB drives. Network and DVD drives are never shown. Install it from **My tiles** like the other bundled tiles.
+
+- Investments 1.2.0 is Webull-only. The Voya browser import, Plaid sync and manual Voya entry are removed, along with the Voya rows, combined totals and options pages. On its first start the tile removes the Voya values it saved (your Webull keys and data are kept), its Voya browser and Plaid files, and the Voya browser helper's registration. Remove the **Glance Voya** extension from your browser yourself.
+
+- LLM Usage matches the Storage tile: 260 pixels wide, each limit on one compact row (the window name and its reset countdown on the left, what is left on the right) with a 5-pixel rounded bar underneath. Plex 1.4.6 can be zoomed by dragging its corner.
+
+- The right-click menu on every tile, the **···** menu in My tiles and the tray menu now show a check beside **Lock position**, **Always on top** and **Snap to nearby tiles** when they are on. The dark menu style had hidden the check column.
+
+- Liquid Icons 1.3.3 makes drops snappy. When Windows aligns desktop icons to a grid (and doesn't auto-arrange them), the liquid now lands on the icon's grid cell the instant the mouse is released and starts its jiggle there, instead of waiting for Windows to report the new position (about 50-100 ms of reading plus a 60 ms pause). Each monitor's grid is found separately. A drop onto another icon (it may be a folder), into a window, or without a grid waits for Windows as before, and if Windows puts the icon somewhere else, the liquid glides there. Confirmation reads after a drop now run back to back for that moment only, so the desktop is not read any more often otherwise.
+
+- Liquid Icons 1.3.2 fixes a memory leak. Reading desktop icon positions through the .NET UI Automation library kept about 140 KB of memory on every read, so a tile left running grew by several gigabytes a day (11 GB after a day on one PC). The tile now reads the same positions through Windows' own UI Automation and releases everything after each read; memory stays flat at about 30 MB. Icons, selection and motion behave exactly as before.
+
 # Glance Platform 1.4.14
 
 - Included package versions: Finance 1.4.4, Usage 1.4.7, Plex 1.4.5, Investments 1.1.18, Weather 1.1.4, Clock and Notes 1.4.1, and Liquid Icons 1.3.1. The installer and portable ZIP include all eight tiles.
