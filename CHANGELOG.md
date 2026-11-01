@@ -1,5 +1,17 @@
 # Unreleased
 
+# Glance Platform 1.5.1
+
+- Included package versions: Finance 1.4.5, Usage 1.4.9, Plex 1.4.8, Investments 1.2.0, Weather 1.1.4, Clock and Notes 1.4.1, Liquid Icons 1.3.5 and Storage 1.0.0. The installer and portable ZIP include all nine tiles.
+
+- Fixed (Plex 1.4.8): the Plex tile could pause Tdarr for several minutes with nobody watching. If Tdarr had restarted a node the tile had paused, the node came back under a new ID, and the tile kept a record of the old one; every time the tile started, that record made it pause all Tdarr nodes until five idle minutes had passed, and stopping the tile reported a failed cleanup, so Glance switched Plex off. Now the tile pauses only when Plex reports a stream, recognises a restarted node by its name, and forgets a paused node that has been missing from Tdarr for an hour without treating it as an error.
+
+- Liquid Icons 1.3.5 gives Liquid its own tab, with as much to adjust as Glass: seven presets (Ink, Droplet, Glossy, Pearl, Mercury, Ocean, Neon), the liquid color, the droplet rim with its own Rim Color, Rim Width, and new Gloss, Depth, Shadow and Glow (with its color). Glass's color, Color Strength and Frost moved to the Glass tab, so each material's options are on its own tab. Appearance keeps what both share (Material, Light From, Edge Softness, Opacity) and adds Quick Looks. Light From now lights Liquid too. Existing looks are unchanged: the new Liquid options start off, and earlier droplet rim settings carry over.
+
+- Resizing a tile that zooms is finer (1% steps instead of 5%), and the edge you drag snaps to a neighbouring tile's edge or a screen edge within 12 pixels: the tile takes the exact zoom that puts the edge there, so side-by-side tiles such as LLM Usage and Storage line up to the pixel. A side that touches another tile when you start dragging stays joined to it while the tile zooms. The exact zoom is saved.
+
+- The Style page sits directly in its tab: no card or scroll box inside it. Every setting is on the left; the live preview, Apply and Reset preset are on the right, and the preview shrinks to fit narrower windows. The Glance window's Style tab and each tile's Style tab share this page. In a window too narrow for two columns (a small screen) the preview, Apply and Reset preset come first, above the settings, so Apply is always in view; the whole tab then scrolls like the other tabs.
+
 # Glance Platform 1.5.0
 
 - Included package versions: Finance 1.4.5, Usage 1.4.9, Plex 1.4.7, Investments 1.2.0, Weather 1.1.4, Clock and Notes 1.4.1, Liquid Icons 1.3.4 and Storage 1.0.0. The installer and portable ZIP include all nine tiles.
