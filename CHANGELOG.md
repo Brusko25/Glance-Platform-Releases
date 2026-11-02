@@ -1,5 +1,13 @@
 # Unreleased
 
+# Glance Platform 1.5.2
+
+- Included package versions: Finance 1.4.6, Usage 1.4.10, Plex 1.4.9, Investments 1.2.0, Weather 1.1.4, Clock and Notes 1.4.1, Liquid Icons 1.3.5 and Storage 1.0.0. The installer and portable ZIP include all nine tiles.
+
+- The Style page's Layout list now offers popular looks: Classic, Compact Grey (the former Compact: the theme's grey, square corners, no border), Compact Black, Midnight, Charcoal, Outlined, Neon and Paper. Choosing one sets the layout, background, border and corners together and keeps your snapped-tile choices; the list shows Custom when your settings match none of them. It is the same list in the Glance window and in every tile's Style tab.
+
+- Exact resizing on every tile: Finance chart windows now snap a dragged side to another tile's or the screen's edge within reach, like the other tiles, and Snap to grid no longer moves a side that snapped (or the side you didn't drag). All tiles and Finance share one edge-snapping routine (Finance 1.4.6; Usage 1.4.10 and Plex 1.4.9 carry the shared file).
+
 # Glance Platform 1.5.1
 
 - Included package versions: Finance 1.4.5, Usage 1.4.9, Plex 1.4.8, Investments 1.2.0, Weather 1.1.4, Clock and Notes 1.4.1, Liquid Icons 1.3.5 and Storage 1.0.0. The installer and portable ZIP include all nine tiles.

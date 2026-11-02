@@ -2,13 +2,13 @@
 
 One manager for clean, movable desktop tiles.
 
-**[Download Glance Platform 1.5.1](https://github.com/Brusko25/Glance-Platform-Releases/releases/tag/v1.5.1)** · [User guide](USER_GUIDE.md) · [Release notes](CHANGELOG.md)
+**[Download Glance Platform 1.5.2](https://github.com/Brusko25/Glance-Platform-Releases/releases/tag/v1.5.2)** · [User guide](USER_GUIDE.md) · [Release notes](CHANGELOG.md)
 
 Glance Platform brings Finance, LLM Usage, Plex, Investments, Weather, Storage, Clock and Notes into a shared desktop tile system. Liquid Icons adds optional liquid and sharp glass backgrounds behind Windows desktop icons, which snap together and jiggle when you drop an icon. Tiles have matching options and right-click menus and run independently. The manager handles installation, placement, the tray and a local Marketplace.
 
 ## Get started
 
-1. Download **Glance-Platform-1.5.1-Setup.exe** from the release page. If Glance is running, choose Quit Glance before running Setup.
+1. Download **Glance-Platform-1.5.2-Setup.exe** from the release page. If Glance is running, choose Quit Glance before running Setup.
 2. Run setup to install Glance for your Windows account, with a Start menu entry and an optional desktop shortcut.
 3. If Windows asks for administrator permission for the bundled CPU sensor, approve it to show CPU temperature in Plex. Glance installs either way, and you can add the sensor later with Settings → Repair CPU temperature.
 4. Open Glance from the Start menu or its shortcut and install the tiles you want from Marketplace.
@@ -36,7 +36,7 @@ Included tile versions are Finance 1.4.5, LLM Usage 1.4.9, Plex 1.4.8, Investmen
 
 Every bundled tile has a 75%–200% scale slider in its options. Plex reads CPU temperature through the included sensor component without a separate monitoring app, showing Celsius to the left of Fahrenheit. Windows administrator permission is required to set up that component; readings depend on CPU support.
 
-**Options → Style** offers Compact and Classic layouts, background colours, borders and corner shapes. Preview your choices, then apply them to one tile or all installed tiles. Accounts, notes, locations and desktop positions stay unchanged. Shared Desktop controls and tile-specific tabs follow the Finance options layout. Minimize tucks the manager into the tray beside the clock. Your account connections and saved tile data stay on your PC.
+**Options → Style** offers ready-made looks (Classic, Compact Grey, Midnight, Neon, Paper and more), background colours, borders and corner shapes. Preview your choices, then apply them to one tile or all installed tiles. Accounts, notes, locations and desktop positions stay unchanged. Shared Desktop controls and tile-specific tabs follow the Finance options layout. Minimize tucks the manager into the tray beside the clock. Your account connections and saved tile data stay on your PC.
 
 Investments requires your own approved Webull API access for Webull syncing.
 
@@ -48,20 +48,20 @@ Marketplace currently browses bundled tiles and a local catalog. Public submissi
 
 ## Screenshots
 
-The images below show synthetic test data from version 1.5.1.
+The images below show synthetic test data from version 1.5.2.
 
-![Shared tile style options](images/v1.5.1/style-options.png)
-![Finance options](images/v1.5.1/finance-options.png)
+![Shared tile style options](images/v1.5.2/style-options.png)
+![Finance options](images/v1.5.2/finance-options.png)
 
-![Glance Platform manager](images/v1.5.1/manager.png)
-![Glance settings and Platform updates](images/v1.5.1/settings.png)
+![Glance Platform manager](images/v1.5.2/manager.png)
+![Glance settings and Platform updates](images/v1.5.2/settings.png)
 
-![Finance tile](images/v1.5.1/finance.png)
-![Usage tile](images/v1.5.1/usage.png)
-![Plex tile](images/v1.5.1/plex.png)
-![Investments tile with sample data](images/v1.5.1/investments.png)
-![Weather tile with sample data](images/v1.5.1/weather.png)
-![Liquid Icons glass presets with synthetic desktop icons](images/v1.5.1/liquid-icons.png)
+![Finance tile](images/v1.5.2/finance.png)
+![Usage tile](images/v1.5.2/usage.png)
+![Plex tile](images/v1.5.2/plex.png)
+![Investments tile with sample data](images/v1.5.2/investments.png)
+![Weather tile with sample data](images/v1.5.2/weather.png)
+![Liquid Icons glass presets with synthetic desktop icons](images/v1.5.2/liquid-icons.png)
 
-![Create with AI](images/v1.5.1/create.png)
-![Building a tile from an AI reply](images/v1.5.1/ai-build.png)
+![Create with AI](images/v1.5.2/create.png)
+![Building a tile from an AI reply](images/v1.5.2/ai-build.png)

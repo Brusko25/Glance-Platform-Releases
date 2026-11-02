@@ -1,10 +1,10 @@
 # Glance Platform
 
-Glance puts independent, movable desktop tiles under one manager. Glance Platform 1.5.1 includes Finance, LLM Usage, Plex, Investments, Weather, Storage, Clock, Notes and the optional Liquid Icons tile, with shared options, styles and right-click menus.
+Glance puts independent, movable desktop tiles under one manager. Glance Platform 1.5.2 includes Finance, LLM Usage, Plex, Investments, Weather, Storage, Clock, Notes and the optional Liquid Icons tile, with shared options, styles and right-click menus.
 
 ## Start
 
-Windows 10/11 with .NET Framework 4.8 is required. Download **Glance-Platform-1.5.1-Setup.exe** from the release page. If Glance is running, choose Quit Glance before running Setup. Setup installs for your Windows account and offers a desktop shortcut. Glance appears in Windows **Installed apps / Add or remove programs**. Uninstall removes program files and shortcuts while keeping saved tile data.
+Windows 10/11 with .NET Framework 4.8 is required. Download **Glance-Platform-1.5.2-Setup.exe** from the release page. If Glance is running, choose Quit Glance before running Setup. Setup installs for your Windows account and offers a desktop shortcut. Glance appears in Windows **Installed apps / Add or remove programs**. Uninstall removes program files and shortcuts while keeping saved tile data.
 
 For a portable copy, download the Windows ZIP, extract the entire folder, and run Start Glance.cmd. Keep Glance.exe, Glance.TileSdk.dll and the other files together. The included CPU sensor component requires Windows administrator permission. Setup installs or updates it only when needed; if you decline that prompt, Glance still installs, and you can add CPU temperature later with Settings → Repair CPU temperature. Portable copies request permission on their first normal launch.
 
@@ -22,7 +22,7 @@ Drag a tile to move it. Right-click for lock, pin, refresh and options. Finance 
 
 In Platform's **Desktop** tab, **Lock All Tiles** keeps every installed tile in place, including all Finance charts. **Unlock All Tiles** lets you move them again. These choices are saved for tiles that are currently off too. Locking doesn't stop updates or change the layout.
 
-Resize an unlocked tile by dragging any side or corner; the side you drag snaps to nearby tiles and screen edges. Tiles that fit their content zoom as a whole, from 75% to 200%. Moving a tile snaps it to other tiles, the screen edges, the divide between monitors and the taskbar. Lock position also locks the size. You can also scale tiles in their options: Finance → Layout → Scale each tile (or right-click a chart → Tile actions → Tile scale); Usage → Display; Plex → Playback → On your widget, then Save options. Clock, Notes, Investments, Weather and Storage have their Tile scale slider under Desktop. Each setting is saved independently.
+Resize an unlocked tile, or a Finance chart, by dragging any side or corner; the side you drag snaps exactly to nearby tiles and screen edges. Tiles that fit their content zoom as a whole, from 75% to 200%. Moving a tile snaps it to other tiles, the screen edges, the divide between monitors and the taskbar. Lock position also locks the size. You can also scale tiles in their options: Finance → Layout → Scale each tile (or right-click a chart → Tile actions → Tile scale); Usage → Display; Plex → Playback → On your widget, then Save options. Clock, Notes, Investments, Weather and Storage have their Tile scale slider under Desktop. Each setting is saved independently.
 
 Minimize or close the manager to leave tiles running beside the clock in the system tray. Double-click the tray icon to restore the manager. Choose Quit Glance from the tray to stop all tiles.
 
@@ -59,7 +59,7 @@ CPU support installs as Glance CPU Sensor in Windows Installed apps, separately 
 
 ## A shared look for your tiles
 
-Right-click a tile and choose **Options…**, then **Style**, or choose **Style…** directly from its menu. **Compact** uses dense rows, a flat surface and small headings. **Classic** uses the rounded Glance presentation and roomier details. Both keep your information available.
+Right-click a tile and choose **Options…**, then **Style**, or choose **Style…** directly from its menu. The **Layout** list offers ready-made looks: **Classic** (the rounded Glance presentation with roomier details, on black), **Compact Grey** (dense rows, a flat surface and small headings on the theme's grey), **Compact Black**, **Midnight**, **Charcoal**, **Outlined**, **Neon** and **Paper**. A look sets the layout, background, border and corners together. Change any of them and the list shows **Custom**. Every look keeps your information available.
 
 Choose the background, corner shape, border style, colour and thickness. The preview changes first; **Apply to this tile** saves only this tile. To give every installed tile the same appearance, including tiles currently turned off, use the **Style** tab in the Glance window and **Apply to all tiles**. The Style tab says a style was applied only after Glance has saved it, and tells you if it couldn't. Applying a style leaves accounts, notes, locations and desktop positions unchanged. You can customize a tile independently afterward.
 
