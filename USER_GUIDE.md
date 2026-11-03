@@ -1,10 +1,10 @@
 # Glance Platform
 
-Glance puts independent, movable desktop tiles under one manager. Glance Platform 1.5.2 includes Finance, LLM Usage, Plex, Investments, Weather, Storage, Clock, Notes and the optional Liquid Icons tile, with shared options, styles and right-click menus.
+Glance puts independent, movable desktop tiles under one manager. Glance Platform 1.5.3 includes Finance, LLM Usage, Plex, Investments, Weather, Storage, System Resources, Clock, Notes and the optional Liquid Icons tile, with shared options, styles and right-click menus.
 
 ## Start
 
-Windows 10/11 with .NET Framework 4.8 is required. Download **Glance-Platform-1.5.2-Setup.exe** from the release page. If Glance is running, choose Quit Glance before running Setup. Setup installs for your Windows account and offers a desktop shortcut. Glance appears in Windows **Installed apps / Add or remove programs**. Uninstall removes program files and shortcuts while keeping saved tile data.
+Windows 10/11 with .NET Framework 4.8 is required. Download **Glance-Platform-1.5.3-Setup.exe** from the release page. If Glance is running, choose Quit Glance before running Setup. Setup installs for your Windows account and offers a desktop shortcut. Glance appears in Windows **Installed apps / Add or remove programs**. Uninstall removes program files and shortcuts while keeping saved tile data.
 
 For a portable copy, download the Windows ZIP, extract the entire folder, and run Start Glance.cmd. Keep Glance.exe, Glance.TileSdk.dll and the other files together. The included CPU sensor component requires Windows administrator permission. Setup installs or updates it only when needed; if you decline that prompt, Glance still installs, and you can add CPU temperature later with Settings → Repair CPU temperature. Portable copies request permission on their first normal launch.
 
@@ -14,7 +14,7 @@ Try Glance.cmd opens a separate sample workspace. Its Finance, Usage and Plex ti
 
 ## Add and manage tiles
 
-Browse Marketplace to install a bundled tile or import a .glancetile file. Enable installed tiles in My tiles. Marketplace currently uses bundled packages and a local catalog; public hosting and automatic internet tile downloads are planned.
+Browse Marketplace to install a bundled tile or import a .glancetile file. Enable installed tiles in My Tiles. Marketplace currently uses bundled packages and a local catalog; public hosting and automatic internet tile downloads are planned.
 
 **Options** opens the tile's options window, with its own content controls followed by shared Style and Desktop tabs. The **···** menu has the same commands, in the same order, as the tile's right-click menu, followed by **Tile setup** (live or sample data mode where supported; changing it restarts the tile) and **Remove tile**.
 
@@ -33,6 +33,7 @@ Minimize or close the manager to leave tiles running beside the clock in the sys
 - Plex retains its connection, activity, hardware and optional Tdarr controls. Configure its connections in Settings. The Tdarr section shows CPU and GPU temperatures when available: GPU readings come from Windows, and CPU readings come from the included Glance CPU Sensor service on supported AMD Zen and Intel PCs. No separate monitoring app is required. If setup was cancelled, use Settings → Repair CPU temperature. Temperatures show Celsius to the left of Fahrenheit; unavailable readings stay hidden. Avoid giving two running Glance Plex instances control over the same Tdarr work.
 - Investments shows your Webull balances, holdings and reported Open P/L. Connect Webull using your own approved US API access in its options.
 - Storage shows each internal and USB drive with a usage bar and its free space. Bars turn amber at 80% used and red at 90%; hover a drive for details. Its options can hide drives, leave out USB drives and change how often free space updates.
+- System Resources shows CPU, memory, GPU, network and disk activity in one compact tile, with the same readings as Task Manager. Bars turn amber at 75% busy and red at 90%, and the top of the tile names the busiest resource. Each disk gets a short bar with its drive letter; hover a row for details. Its options choose which rows to show and how often they update (every 2 seconds by default).
 - Weather supports city or postal-code search worldwide, current conditions and a 10-day forecast. Choose the matching location and your preferred units in its options. It uses Open-Meteo without an API key.
 
 Fresh installations have no accounts or personal data. Tile data is stored locally under %LOCALAPPDATA%\Glance\Platform\data. The sample workspace uses PlatformTryout. Removing a tile retains its private data for recovery.
@@ -43,13 +44,13 @@ Open **Settings → Platform updates → Check for updates**. If a newer stable 
 
 If any tile cannot confirm cleanup, the update stops and its recovery files are kept. Update logs and portable program backups are under the workspace's updates folder. Update folders older than two weeks are removed when Glance starts. Quit any other workspace using the same program folder before updating. Back up %LOCALAPPDATA%\Glance\Platform before making major changes.
 
-Use **My tiles → Update all installed tiles** to update every installed tile with a newer bundled or local catalog package. Enabled tiles restart after cleanup; disabled tiles stay off. Settings, placement and private data are preserved. A failed tile update does not prevent other tiles from updating. Add a creator's newer .glancetile through **Marketplace → Add to catalog**, then run Update all. Online tile hosting remains future work. Platform upgrades apply newer bundled tiles on restart when each tile's automatic-update preference is enabled; Update all installed tiles also lets you apply them manually.
+Use **My Tiles → Update all installed tiles** to update every installed tile with a newer bundled or local catalog package. Enabled tiles restart after cleanup; disabled tiles stay off. Settings, placement and private data are preserved. A failed tile update does not prevent other tiles from updating. Add a creator's newer .glancetile through **Marketplace → Add to catalog**, then run Update all. Online tile hosting remains future work. Platform upgrades apply newer bundled tiles on restart when each tile's automatic-update preference is enabled; Update all installed tiles also lets you apply them manually.
 
 ## Create tiles
 
-To make a tile without writing code, use **Create tiles → Create with AI**: describe what you want, choose **Copy AI prompt**, and paste it into any AI chat. When the AI replies, choose **Build from AI reply…** and paste the reply. Glance compiles it, adds it to your Marketplace, and lets you review what it can access before installing. If the build fails, copy the fix request back to the AI and try again. AI-written tiles run with your Windows account's access, like any tile.
+To make a tile without writing code, use **Create Tiles → Create with AI**: describe what you want, choose **Copy AI prompt**, and paste it into any AI chat. When the AI replies, choose **Build from AI reply…** and paste the reply. Glance compiles it, adds it to your Marketplace, and lets you review what it can access before installing. If the build fails, copy the fix request back to the AI and try again. AI-written tiles run with your Windows account's access, like any tile.
 
-Open Create tiles in the manager, or extract creator-kit.zip. The kit contains the SDK, a starter project, Clock/Notes examples and the creator guide. Native tiles run with your Windows user's permissions; install packages from creators you trust.
+Open Create Tiles in the manager, or extract creator-kit.zip. The kit contains the SDK, a starter project, Clock/Notes examples and the creator guide. Native tiles run with your Windows user's permissions; install packages from creators you trust.
 
 ## Known limits
 

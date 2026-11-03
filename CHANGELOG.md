@@ -1,5 +1,17 @@
 # Unreleased
 
+# Glance Platform 1.5.3
+
+- Included package versions: Finance 1.4.6, Usage 1.4.10, Plex 1.4.9, Investments 1.2.0, Weather 1.1.4, Clock and Notes 1.4.1, Liquid Icons 1.3.5, Storage 1.0.0 and System Resources 1.0.0. The installer and portable ZIP include all ten tiles.
+
+- **New tile: System Resources** (1.0.0). CPU, memory, GPU, network and disk activity in one compact tile, with the same readings as Task Manager: CPU load and clock speed, memory in use, the busiest graphics engine and video memory, the busiest connected network adapter against its link speed, and each disk's active time with its drive letter. Bars turn amber at 75% busy and red at 90%, and the top of the tile names the busiest resource. Options choose which rows to show and how often they update (every 2 seconds by default). Install it from Marketplace.
+
+- Options always open in front. Windows only lets a tile bring its window forward for a moment after your click, and Options that take a while to build (Liquid Icons) missed it and opened behind the Glance window. For a few seconds after you choose Options, Glance now raises the tile's Options window above other windows once.
+
+- The Glance window opens cleanly: it stays off screen until its page has painted, instead of flashing white boxes for a moment. The same applies when it comes back from the tray.
+
+- The tabs are now **My Tiles** and **Create Tiles**, in the same title case as the other tabs.
+
 # Glance Platform 1.5.2
 
 - Included package versions: Finance 1.4.6, Usage 1.4.10, Plex 1.4.9, Investments 1.2.0, Weather 1.1.4, Clock and Notes 1.4.1, Liquid Icons 1.3.5 and Storage 1.0.0. The installer and portable ZIP include all nine tiles.
