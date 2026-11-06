@@ -1,5 +1,23 @@
 # Unreleased
 
+# Glance Platform 1.6.0
+
+- A clean new starting point: Glance 1.6.0, and every bundled tile moves to a new x.y.0 version. Included package versions: Finance 1.5.0, Usage 1.5.0, Plex 1.5.0, Investments 1.3.0, Weather 1.2.0, Clock 1.5.0, Notes 1.5.0, Liquid Icons 1.4.0, Storage 1.1.0 and System Resources 1.1.0.
+
+- Fixed (Finance): in Options → Charts, the two cards crept up under the heading every time the window was resized, until they could no longer be reached. They now stay in place. Options → Layout sizes its Movement & Sizing card to its four rows instead of leaving a large empty space. Options and About show Finance's own version instead of Glance's, and About describes Options and Disable tile instead of a tray icon. Sample charts now snap and stay on screen like live charts, and merged charts re-check their neighbours as soon as snapping is switched back on.
+
+- Finance charts are lighter: a chart reuses its price data until new prices arrive or the range changes, instead of rebuilding it on every repaint and mouse move, and dragging a chart finds the other tiles once instead of on every mouse move.
+
+- LLM Usage: Options now have just the tile's pages (Overview, Accounts, Display and Support) plus Glance's Style and Desktop tabs. Support → Report an issue opens Glance's issue page (the old LLM Usage page no longer exists), Support → Setup guide is rewritten for the tile, the version at the bottom is the tile's own, and Reset usage display no longer changes Desktop settings. The tile lays itself out again only after a new reading and reads sign-in files away from the screen, so it stays smooth while checking.
+
+- Plex: Plex Connection → Open setup guide opens Glance's guide (the old Plex page no longer exists). The "Notify when encoding pauses or resumes" switch is gone: it needed the old Plex tray icon and did nothing in Glance. Options → Activity keeps your scroll position and selected session instead of jumping back to the top every 5 seconds. While Tdarr is paused, the encoder guard's heartbeat file is written every 5 seconds instead of every second. The version is shown at the bottom of Options.
+
+- Liquid Icons: stops its 60-times-a-second frame timer while the tile is hidden, no longer loses memory on the compatible drawing path, and shows a drawing failure as an error in My Tiles instead of a green ready status.
+
+- System Resources reads only the rows you chose (the GPU read is the costly one) and nothing while the tile is hidden. Investments rewrites its encrypted file only when something changed; it used to rewrite it every 5 minutes, even before Webull was set up. Weather no longer changes its Open-Meteo link while drawing. Clock, Storage, System Resources, Investments and Weather make their fonts once per zoom level instead of on every repaint.
+
+- Under the hood: about 5,400 lines of code left over from the standalone Finance, LLM Usage and Plex apps (their own updaters, tray menus, drag code and hidden screens) are gone, and the tiles' test code no longer ships inside them. Glance's GitHub checks no longer keep an unused 55–63 MB build after every update.
+
 # Glance Platform 1.5.3
 
 - Included package versions: Finance 1.4.6, Usage 1.4.10, Plex 1.4.9, Investments 1.2.0, Weather 1.1.4, Clock and Notes 1.4.1, Liquid Icons 1.3.5, Storage 1.0.0 and System Resources 1.0.0. The installer and portable ZIP include all ten tiles.

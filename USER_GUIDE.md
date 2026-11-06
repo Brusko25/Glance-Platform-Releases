@@ -1,10 +1,10 @@
 # Glance Platform
 
-Glance puts independent, movable desktop tiles under one manager. Glance Platform 1.5.3 includes Finance, LLM Usage, Plex, Investments, Weather, Storage, System Resources, Clock, Notes and the optional Liquid Icons tile, with shared options, styles and right-click menus.
+Glance puts independent, movable desktop tiles under one manager. Glance Platform 1.6.0 includes Finance, LLM Usage, Plex, Investments, Weather, Storage, System Resources, Clock, Notes and the optional Liquid Icons tile, with shared options, styles and right-click menus.
 
 ## Start
 
-Windows 10/11 with .NET Framework 4.8 is required. Download **Glance-Platform-1.5.3-Setup.exe** from the release page. If Glance is running, choose Quit Glance before running Setup. Setup installs for your Windows account and offers a desktop shortcut. Glance appears in Windows **Installed apps / Add or remove programs**. Uninstall removes program files and shortcuts while keeping saved tile data.
+Windows 10/11 with .NET Framework 4.8 is required. Download **Glance-Platform-1.6.0-Setup.exe** from the release page. If Glance is running, choose Quit Glance before running Setup. Setup installs for your Windows account and offers a desktop shortcut. Glance appears in Windows **Installed apps / Add or remove programs**. Uninstall removes program files and shortcuts while keeping saved tile data.
 
 For a portable copy, download the Windows ZIP, extract the entire folder, and run Start Glance.cmd. Keep Glance.exe, Glance.TileSdk.dll and the other files together. The included CPU sensor component requires Windows administrator permission. Setup installs or updates it only when needed; if you decline that prompt, Glance still installs, and you can add CPU temperature later with Settings → Repair CPU temperature. Portable copies request permission on their first normal launch.
 
@@ -29,8 +29,8 @@ Minimize or close the manager to leave tiles running beside the clock in the sys
 ## Connect data
 
 - Finance retains charts, portfolio records, local calendar events, saved setups and its original appearance controls.
-- LLM Usage offers the original account connection options. Connect only the providers you want. Codex uses a persistent helper; Claude has 5/10/15-minute refresh choices and respects service retry deadlines.
-- Plex retains its connection, activity, hardware and optional Tdarr controls. Configure its connections in Settings. The Tdarr section shows CPU and GPU temperatures when available: GPU readings come from Windows, and CPU readings come from the included Glance CPU Sensor service on supported AMD Zen and Intel PCs. No separate monitoring app is required. If setup was cancelled, use Settings → Repair CPU temperature. Temperatures show Celsius to the left of Fahrenheit; unavailable readings stay hidden. Avoid giving two running Glance Plex instances control over the same Tdarr work.
+- LLM Usage shows your Codex and Claude subscription limits. Connect only the providers you want in its Options (Accounts → Account setup). Codex and Claude are checked every minute by default (from 10 seconds to 15 minutes), and the tile respects the services' retry deadlines.
+- Plex shows who is watching, with viewing history, CPU/GPU indicators and optional Tdarr pausing. Set up its Plex and Tdarr connections in its Options (right-click the tile → Options…). The Tdarr section shows CPU and GPU temperatures when available: GPU readings come from Windows, and CPU readings come from the included Glance CPU Sensor service on supported AMD Zen and Intel PCs. No separate monitoring app is required. If setup was cancelled, use Settings → Repair CPU temperature. Temperatures show Celsius to the left of Fahrenheit; unavailable readings stay hidden. Avoid giving two running Glance Plex instances control over the same Tdarr work.
 - Investments shows your Webull balances, holdings and reported Open P/L. Connect Webull using your own approved US API access in its options.
 - Storage shows each internal and USB drive with a usage bar and its free space. Bars turn amber at 80% used and red at 90%; hover a drive for details. Its options can hide drives, leave out USB drives and change how often free space updates.
 - System Resources shows CPU, memory, GPU, network and disk activity in one compact tile, with the same readings as Task Manager. Bars turn amber at 75% busy and red at 90%, and the top of the tile names the busiest resource. Each disk gets a short bar with its drive letter; hover a row for details. Its options choose which rows to show and how often they update (every 2 seconds by default).
