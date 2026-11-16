@@ -1,5 +1,46 @@
 # Unreleased
 
+# Glance Platform 1.6.4
+
+- Included package versions: Finance 1.5.1, Usage 1.5.1, Plex 1.5.1, Investments 1.3.0, Weather 1.2.1, Clock 1.5.0, Notes 1.5.0, Liquid Icons 1.5.1, Storage 1.1.0 and System Resources 1.1.1.
+
+- Plex 1.5.1, Tdarr pausing is safer, and Activity is steadier:
+  - If the encoder guard (the small helper that pauses Tdarr's encoders on this PC) was killed while encoders were paused, and playback then stopped within two seconds, the encoders could stay paused until someone next watched Plex. The tile now starts the guard again just to let them go, and does the same when Glance starts and finds encoders a previous run left paused.
+  - The tile tells the guard it is still running every 2 seconds (it was every 5 seconds in 1.6.0, every second before that), so a briefly unresponsive Glance is less likely to make the guard resume encoding during playback.
+  - If the PC clock jumps backwards, the tile now sends that signal again at once, instead of going quiet until the clock catches up.
+  - Options → Activity: when a new session starts, the list no longer shifts by a row under you; it stays on the same sessions. A new search starts at the top. After the list updates, Up and Down continue from the selected session. Opening the Activity tab shows the latest sessions at once, and the list stops updating while another tab is open.
+
+- Finance 1.5.1:
+  - Turning Snap back on in Finance's own Desktop settings now re-merges it with the tiles it touches straight away, as switching snapping on for all tiles already did.
+  - A 1W chart now moves to the new day at midnight even when no new prices arrive (for example over a weekend).
+  - Options → Color Settings: the open Volume card no longer has a large empty space at the bottom.
+  - With no charts, My Tiles says "Open Options to add a market chart".
+
+- LLM Usage 1.5.1:
+  - Account setup → Claude desktop sign-in: a folder pasted with quotes around it (as Explorer's Copy as path makes it) is accepted, and a folder Windows can't use shows a message instead of closing the tile with an error.
+  - Account setup: when a Claude folder saved earlier has since moved, saving explains that, instead of blaming folder access and disk space.
+  - After a provider's connection changes in Account setup, it is read again within its normal interval, instead of keeping the old error and waiting up to 15 minutes from earlier failures.
+  - A Claude check that is cut short because Glance closes still counts, so restarting Glance never asks Anthropic twice within seconds.
+  - Usage details show a new refresh interval straight away. Opening Options while it is on the Style or Desktop tab moves it to Overview with fresh readings. The footer button says Show tile.
+
+- System Resources 1.1.1: after the tile was hidden, or a row was switched back on, the first reading shows the load now instead of the average over the whole gap (which could briefly show a busy network or disk).
+
+- Glance: a tile's own Options → Desktop page, left open while you use Lock all tiles (or Apply to all tiles) in the Glance window, now shows the new values, so a later change on that page no longer unlocks the tile again. In My Tiles, Finance → Style… opens Finance's Style tab even when it has no charts. Tile settings that a tile sends again unchanged (Finance does after every refresh) are no longer written to disk each time.
+- Liquid Icons 1.5.1, a third material, **Wet** (oil and water), beside Liquid and Glass. Open Liquid Icons Options → **Wet**:
+  - Four looks to start from: **Oil Puddle** (black oil with a puddle edge, a few drops beside it and soft reflections), **Water Spill** (a bright, half-clear spill with a darker edge and many small drops), **Black Drips** (glossy black running down in drips) and **Clear Water** (the wallpaper shows through, with a darker edge and thin highlights).
+  - Everything is adjustable: the color, Solid Body (clear water to solid oil), Highlights, Reflections, Edge Depth, Edge Thickness, Shadow, Wavy Edge, Drops and Drips. Wavy Edge, Drops and Drips at 0 turn each off.
+  - Icons always stay covered, the shapes keep their size on scaled displays, and drops and drips grow and shrink smoothly while you drag icons instead of jumping.
+  - Every material (Liquid, Glass and Wet) now stays at full detail while you drag icons; before, Glass dropped to half detail until icons settled. Only the area around a moving icon is drawn again, on every processor core, so a frame takes a few thousandths of a second.
+  - Your Liquid and Glass looks are unchanged; Wet has its own color and values.
+- Liquid Icons 1.4.1 (included in 1.5.1): on Windows 10 and on Windows 11 before version 24H2, which draw the wallpaper and the icons as one layer, My Tiles now says "Needs Windows 11 Version 24H2 Or Newer" instead of "This Windows Desktop Layout Is Not Supported Yet". The guide and the download page say the same.
+- Works on more PCs (from a code review for other people's systems):
+  - Saving settings no longer fails with "Glance could not complete that action" when a virus scanner or backup tool holds the settings file for a moment; Glance and LLM Usage now try again for a split second.
+  - Every tile gets modern web security (TLS 1.2) from Glance itself, so tiles made by other people can reach the internet without extra code.
+  - On PCs where Windows Script Host is removed or blocked, Glance starts and updates normally, and Settings → Create desktop shortcut explains what to do instead of showing a technical error.
+  - If Setup can't install CPU temperature, its message now points to Settings → Repair CPU temperature (it said Preferences).
+  - A workspace that can't be read or recovered starts in the classic look, like a new one.
+- Local Weather 1.2.1: its description says Options instead of App options.
+
 # Glance Platform 1.6.0
 
 - A clean new starting point: Glance 1.6.0, and every bundled tile moves to a new x.y.0 version. Included package versions: Finance 1.5.0, Usage 1.5.0, Plex 1.5.0, Investments 1.3.0, Weather 1.2.0, Clock 1.5.0, Notes 1.5.0, Liquid Icons 1.4.0, Storage 1.1.0 and System Resources 1.1.0.
