@@ -1,10 +1,10 @@
 # Glance Platform
 
-Glance puts independent, movable desktop tiles under one manager. Glance Platform 1.6.4 includes Finance, LLM Usage, Plex, Investments, Weather, Storage, System Resources, Clock, Notes and the optional Liquid Icons tile, with shared options, styles and right-click menus.
+Glance puts independent, movable desktop tiles under one manager. Glance Platform 1.6.6 includes Finance, LLM Usage, Plex, Investments, Weather, Storage, System Resources, Clock, Notes and the optional Liquid Icons tile, with shared options, styles and right-click menus.
 
 ## Start
 
-Windows 10/11 with .NET Framework 4.8 is required. Download **Glance-Platform-1.6.4-Setup.exe** from the release page. If Glance is running, choose Quit Glance before running Setup. Setup installs for your Windows account and offers a desktop shortcut. Glance appears in Windows **Installed apps / Add or remove programs**. Uninstall removes program files and shortcuts while keeping saved tile data.
+Windows 10/11 with .NET Framework 4.8 is required. Download **Glance-Platform-1.6.6-Setup.exe** from the release page. If Glance is running, choose Quit Glance before running Setup. Setup installs for your Windows account and offers a desktop shortcut. Glance appears in Windows **Installed apps / Add or remove programs**. Uninstall removes program files and shortcuts while keeping saved tile data.
 
 For a portable copy, download the Windows ZIP, extract the entire folder, and run Start Glance.cmd. Keep Glance.exe, Glance.TileSdk.dll and the other files together. The included CPU sensor component requires Windows administrator permission. Setup installs or updates it only when needed; if you decline that prompt, Glance still installs, and you can add CPU temperature later with Settings → Repair CPU temperature. Portable copies request permission on their first normal launch.
 
@@ -74,9 +74,26 @@ The Glance window's **Style** and **Desktop** tabs are the master settings. Choo
 
 ### Liquid Icons
 
-Install **Liquid Icons** from Marketplace and enable it in My Tiles. It is a separate optional tile that puts rounded liquid, glass or wet (oil and water) backgrounds behind your existing desktop icons and labels. Nearby backgrounds flow together. Windows still handles opening, dragging, selection, menus and renaming.
+Install **Liquid Icons** from Marketplace and enable it in My Tiles. It is a separate optional tile that puts liquid backgrounds behind your existing desktop icons and labels: oil, water, glass and more. Nearby backgrounds flow together. Windows still handles opening, dragging, selection, menus and renaming.
 
-Open Liquid Icons **Settings**. **Appearance** chooses the material (Liquid, Glass or Wet), the light direction for all three, edge softness and opacity, and has Quick Looks. **Liquid** has presets (Ink, Droplet, Glossy, Pearl, Mercury, Ocean and Neon), the liquid color, the droplet rim with its color and width, gloss, depth, shadow and a colored glow. **Glass** gives sharp, clean glass with presets (Clear, Frosted, Tinted, Solid, Smoked, Obsidian and Neon; Tinted and Solid use your chosen color), the glass color, **Color Strength** (0% clear to 100% solid color, so solid black is obsidian), frost, and adjusts shine, gloss, edge depth and thickness, shadow and glow. Glass doesn't read the wallpaper, so animated wallpapers keep playing underneath. **Shape And Motion** sets the shape, size, padding, roundness, join reach and settle time, and **Drop Jiggle**: how strongly a dropped icon snaps into the pool and jiggles: while you drag, its liquid lifts away from its neighbours, and when you drop it, it snaps in and wobbles (click the preview to see it; 0 turns it off). Motion can be disabled. Each page previews changes until you choose **Save Changes**. Disable Liquid Icons or use **Hide All Tiles** to remove its backgrounds; the wallpaper and icon positions remain yours. The surface stays attached to the desktop, so it has no movable frame, pinning or global tile style controls, and Lock All Tiles does not lock your Windows icons. **Wet** gives oil and water: four looks (Oil Puddle, Water Spill, Black Drips and Clear Water), each a starting point you can adjust with the color, **Solid Body** (low is clear water, 100% is solid oil), highlights, reflections, edge depth and thickness, shadow, **Wavy Edge** (a puddle outline), **Drops** (small drops scattered beside the liquid) and **Drips** (liquid running down); 0 turns each of the last three off.
+Open Liquid Icons **Settings**. Everything is on one page with a live preview; nothing changes on the desktop until you choose **Save Changes**. A new install starts with the **Oil Puddle** look: black oil with a wavy edge and a few drops.
+
+On the right, **Look** is a list of starting points. Choose one, then adjust anything; once a value differs from every look, the list says **Custom**.
+
+- Oil and water, with a wavy edge and drops: **Oil Puddle**, **Water Spill**, **Black Drips** and **Clear Water**.
+- Glass, with a smooth edge and a bright line on it: **Glass**, **Frosted** and **Smoked**. Glass doesn't read the wallpaper, so animated wallpapers keep playing underneath.
+- Solid, smooth liquids: **Obsidian**, **Mercury**, **Pearl**, **Ocean**, and **Ink** (a plain black fill with no lighting).
+- **Neon**: dark glass with a colored glow.
+
+Under the list are the color and every value of the look:
+
+- **Solid Body** runs from clear (0%) to solid (100%). **Highlights** are the bright reflections on the edge; on a pale liquid, where white can't show, they also shade the edge around them. **Reflections** lays soft patches across the middle: bright ones show on a dark liquid, darker ones on a pale liquid. **Bright Edge** is a thin bright line right on the outline, as on glass.
+- **Edge Depth** makes the edge look rounder and deeper: it darkens the side away from the light and, on a dark liquid, lightens the side toward it. **Edge Thickness** is how wide the rounded edge is; the edge values show more on a thicker edge. **Shadow** falls away from the light. **Glow** surrounds the liquid in its own color (the small square picks it) and tints the bright edge.
+- **Wavy Edge** gives a puddle outline, **Drops** scatters small drops beside the liquid, and **Drips** lets it run down. 0 turns each off.
+
+Under the preview are the settings every look shares. **Light And Edge**: the light direction, opacity, edge softness (0 is a crisp outline, 16 a wide soft one) and join reach (how far apart icons still flow together; 0 keeps them apart). **Shape**: Rounded, Pill or Square, roundness, width and height. **Motion**: **Drop Jiggle** is how strongly a dropped icon snaps into the pool and jiggles: while you drag, its liquid lifts away from its neighbours, and when you drop it, it snaps in and wobbles (click the preview to replay it; 0 turns it off). **Settle** is how long the liquid takes to glide into place after icons move, from a quick snap (50) to a slow glide (800); changing it replays the drop in the preview. Unticking Animate Connections turns motion off.
+
+Disable Liquid Icons or use **Hide All Tiles** to remove its backgrounds; the wallpaper and icon positions remain yours. The surface stays attached to the desktop, so it has no movable frame, pinning or global tile style controls, and Lock All Tiles does not lock your Windows icons.
 
 Requires Windows 11 version 24H2 or newer (Settings → System → About shows your version). Windows 10 and earlier Windows 11 draw the wallpaper and the icons as one layer, with no room for backgrounds in between; there My Tiles shows "Needs Windows 11 Version 24H2 Or Newer". It reads icon rectangles only, keeps positions in memory, and does not read shortcut targets or file contents. If the desktop layout is unsupported, its status explains that and no backgrounds are drawn.
 

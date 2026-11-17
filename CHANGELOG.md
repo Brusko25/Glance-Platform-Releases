@@ -1,5 +1,28 @@
 # Unreleased
 
+# Glance Platform 1.6.6
+
+- Included package versions: Finance 1.5.1, Usage 1.5.1, Plex 1.5.1, Investments 1.3.0, Weather 1.2.1, Clock 1.5.0, Notes 1.5.0, Liquid Icons 1.6.1, Storage 1.1.0 and System Resources 1.1.1.
+
+- Liquid Icons 1.6.1, one liquid and one Options page:
+  - The three materials (Liquid, Glass and Wet) are now one liquid, drawn by the engine that drew Wet. Glass and solid looks get its lighting: a rounded edge with highlights, reflections across the middle, and depth. There is no material to choose any more.
+  - One list of looks: **Oil Puddle**, **Water Spill**, **Black Drips**, **Clear Water**, **Glass**, **Frosted**, **Smoked**, **Obsidian**, **Mercury**, **Pearl**, **Ocean**, **Neon** and **Ink**. Choose one, then adjust anything; the list says **Custom** once a value differs from every look.
+  - One list of values for every look: the color, Solid Body (clear to solid), Highlights, Reflections, Bright Edge, Edge Depth, Edge Thickness, Shadow, Glow with its color, Wavy Edge, Drops and Drips. Wavy Edge, Drops and Drips at 0 give a smooth outline, as glass has.
+  - New for every look: **Glow**, a colored light around the liquid that also tints its bright edge, and **Bright Edge**, a thin bright line on the outline.
+  - Options are a single page instead of five: the live preview on the left with light, shape and motion under it, and the look with its values on the right.
+  - Removed: the material choice, the four extra previews, Quick Looks, the row of five color buttons (the Color button opens the full picker), and the separate Frost, Droplet Rim, Rim Width, Rim Color, Edge Shine and Padding controls. A padding you saved before still counts.
+  - New installs start with the **Oil Puddle** look: black oil with a thin wavy edge and a few drops, lit from the top right, fully opaque. Oil Puddle itself now has that thinner edge and no shadow.
+  - Every look starts with the same thin edge: **Edge Thickness** 5. Change it in Options for a rounder, deeper edge.
+  - Every setting was measured across its range on every look, and those that barely changed the picture now do:
+    - **Settle (ms)** now runs from 50 to 800 (it was 50 to 250, and a drop was capped at 120 whatever you chose, so it always felt the same). A drop lands in three fifths of the time you set, and changing the value replays the drop in the preview.
+    - **Edge Depth** now shows on dark liquids: it lightens the side of the edge toward the light. Before, it only darkened, which black oil cannot show.
+    - **Reflections** now show on pale, solid liquids (Mercury, Pearl) as darker patches beside the bright ones, which only showed on dark liquids. On see-through liquids (Water Spill, Frosted, Glass) the bright patches are drawn stronger, since less of them shows.
+    - **Highlights** now show on pale liquids (Pearl): white highlights can't show on white, so the edge around them is shaded.
+    - **Edge Softness** now runs from a crisp outline to a clearly soft one (13 pixels at 16; it was 5).
+    - **Glow** starts in violet instead of white, so raising it shows on any wallpaper.
+  - A look you saved with Wet is drawn exactly as before. A look saved with Liquid or Glass is converted to the closest look of the one liquid: the same color, solidity, edge, shadow and glow, with the new lighting, so it looks similar but not identical.
+  - Drawing is simpler and faster: everything is drawn at full detail in one pass.
+
 # Glance Platform 1.6.4
 
 - Included package versions: Finance 1.5.1, Usage 1.5.1, Plex 1.5.1, Investments 1.3.0, Weather 1.2.1, Clock 1.5.0, Notes 1.5.0, Liquid Icons 1.5.1, Storage 1.1.0 and System Resources 1.1.1.
