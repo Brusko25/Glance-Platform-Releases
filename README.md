@@ -2,15 +2,15 @@
 
 One manager for clean, movable desktop tiles.
 
-**[Download Glance Platform 1.7.0](https://github.com/Brusko25/Glance-Platform-Releases/releases/tag/v1.7.0)** · [User guide](USER_GUIDE.md) · [Release notes](CHANGELOG.md)
+**[Download Glance Platform 2.0.0](https://github.com/Brusko25/Glance-Platform-Releases/releases/tag/v2.0.0)** · [User guide](USER_GUIDE.md) · [Release notes](CHANGELOG.md)
 
-Glance Platform brings Finance, LLM Usage, Plex, Investments, Weather, Storage, System Resources, Cameras, SABnzbd, Messages, Clock and Notes into a shared desktop tile system. Liquid Icons adds optional liquid backgrounds, from oil puddles and water spills to glass and neon, behind Windows desktop icons, which snap together and jiggle when you drop an icon. Tiles have matching options and right-click menus and run independently. Custom desktops give a monitor its own arrangement of tiles and program windows, swapped in and out with a keyboard shortcut. The manager handles installation, placement, the tray and a local Marketplace.
+Glance Platform brings Finance, LLM Usage, Plex, Investments, Weather, Storage, System Resources, Cameras, SABnzbd, qBittorrent, Messages, Clock and Notes into a shared desktop tile system. Liquid Icons adds optional liquid backgrounds, from oil puddles and water spills to glass and neon, behind Windows desktop icons, which snap together and jiggle when you drop an icon. Tiles have matching options and right-click menus and run independently. Every tile resizes freely from any side or corner and lays its content out to the size you give it. Custom desktops give a monitor (or all of them) its own arrangement of tiles and program windows, swapped in and out with a keyboard shortcut. The manager handles installation, placement, the tray and a local Marketplace.
 
-![Glance tiles snapped together on the desktop](images/v1.7.0/desktop.png)
+![Glance tiles snapped together on the desktop](images/v2.0.0/desktop.png)
 
 ## Get started
 
-1. Download **Glance-Platform-1.7.0-Setup.exe** from the release page. If Glance is running, choose Quit Glance before running Setup.
+1. Download **Glance-Platform-2.0.0-Setup.exe** from the release page. If Glance is running, choose Quit Glance before running Setup.
 2. Run setup to install Glance for your Windows account, with a Start menu entry and an optional desktop shortcut.
 3. If Windows asks for administrator permission for the bundled CPU sensor, approve it to show CPU temperature in Plex. Glance installs either way, and you can add the sensor later with Settings → Repair CPU temperature.
 4. Open Glance from the Start menu or its shortcut and install the tiles you want from Marketplace.
@@ -32,15 +32,16 @@ Requires Windows 10/11 and .NET Framework 4.8. The installer and portable ZIP ar
 | System Resources | CPU, memory, GPU, network and disk activity, turning amber and red when something is working hard |
 | Cameras | Live video from your home cameras (Tapo and other RTSP cameras), straight to your PC without the internet |
 | SABnzbd | What SABnzbd is downloading now and what finished or failed, found on your PC without setup |
+| qBittorrent | qBittorrent itself in a tile (its own Web UI, live from qBittorrent on your PC), so it can stay minimized |
 | Messages | Text from your PC through your Android phone (Google Messages for web): drag in a picture or paste a screenshot |
 | Clock and Notes | Local time and a saved scratchpad |
 | Liquid Icons | Optional liquid backgrounds that flow together around desktop icons: 13 adjustable looks, from oil and water to glass, mercury and neon (Windows 11 24H2 or newer) |
 
-Included tile versions are Finance 1.5.1, LLM Usage 1.5.1, Plex 1.5.1, Investments 1.3.0, Local Weather 1.2.1, Clock 1.5.0, Notes 1.5.0, Liquid Icons 1.6.1, Storage 1.1.0 and System Resources 1.1.1. The installer and Windows ZIP include all ten tile packages. Separate Finance, Usage and Plex packages, a creator kit in the ZIP, and SHA-256 checksums are also provided.
+Every included tile is version 2.0 (Plex, Weather and Investments 2.0.1). The installer and Windows ZIP include all fourteen tile packages. Separate Finance, Usage and Plex packages, a creator kit in the ZIP, and SHA-256 checksums are also provided.
 
 **Settings → Platform updates** checks GitHub for the main app. **My Tiles → Update all installed tiles** installs newer bundled or local catalog packages while preserving settings and positions. Platform updates refresh existing Glance shortcut icons and apply newer bundled tiles when their automatic-update preference is enabled.
 
-Every bundled tile has a 75%–200% scale slider in its options. Plex reads CPU temperature through the included sensor component without a separate monitoring app, showing Celsius to the left of Fahrenheit. Windows administrator permission is required to set up that component; readings depend on CPU support.
+Drag any side or corner of a tile to any size and shape; hold Ctrl while dragging a corner to zoom its text and pictures from 75% to 200% instead (every bundled tile also has a scale slider in its options), and right-click → Size to fit for the size its content needs. Plex reads CPU temperature through the included sensor component without a separate monitoring app, showing Celsius to the left of Fahrenheit. Windows administrator permission is required to set up that component; readings depend on CPU support.
 
 **Options → Style** offers ready-made looks (Classic, Compact Grey, Midnight, Neon, Paper and more), background colours, borders and corner shapes. Preview your choices, then apply them to one tile or all installed tiles. Accounts, notes, locations and desktop positions stay unchanged. Shared Desktop controls and tile-specific tabs follow the Finance options layout. Minimize tucks the manager into the tray beside the clock. Your account connections and saved tile data stay on your PC.
 
@@ -56,17 +57,17 @@ Marketplace currently browses bundled tiles and a local catalog. Public submissi
 
 Real captures of Glance Platform 1.6.0 on Windows 11. The tiles use the Classic layout with a black background, rounded corners and **Merge snapped tiles**, so touching tiles share one outline. All names, drives, streams, accounts and usage are sample data; the market charts and the Seattle weather were live public data at capture time.
 
-![Glance Plex with three streams and Tdarr working](images/v1.7.0/plex.png) ![System Resources over LLM Usage](images/v1.7.0/system-usage.png) ![Storage](images/v1.7.0/storage.png) ![Investments over Weather](images/v1.7.0/investments-weather.png)
+![Glance Plex with three streams and Tdarr working](images/v2.0.0/plex.png) ![System Resources over LLM Usage](images/v2.0.0/system-usage.png) ![Storage](images/v2.0.0/storage.png) ![Investments over Weather](images/v2.0.0/investments-weather.png)
 
-![Finance charts snapped in a row](images/v1.7.0/finance.png)
+![Finance charts snapped in a row](images/v2.0.0/finance.png)
 
-![Glance window: My Tiles](images/v1.7.0/manager.png)
-![Glance window: Marketplace](images/v1.7.0/marketplace.png)
-![Glance window: Style for all tiles](images/v1.7.0/style.png)
-![Glance window: Settings and Platform updates](images/v1.7.0/settings.png)
+![Glance window: My Tiles](images/v2.0.0/manager.png)
+![Glance window: Marketplace](images/v2.0.0/marketplace.png)
+![Glance window: Style for all tiles](images/v2.0.0/style.png)
+![Glance window: Settings and Platform updates](images/v2.0.0/settings.png)
 
-![System Resources options](images/v1.7.0/system-options.png)
-![Liquid Icons looks with synthetic desktop icons](images/v1.7.0/liquid-icons.png)
+![System Resources options](images/v2.0.0/system-options.png)
+![Liquid Icons looks with synthetic desktop icons](images/v2.0.0/liquid-icons.png)
 
-![Create with AI](images/v1.7.0/create.png)
-![Building a tile from an AI reply](images/v1.7.0/ai-build.png)
+![Create with AI](images/v2.0.0/create.png)
+![Building a tile from an AI reply](images/v2.0.0/ai-build.png)
