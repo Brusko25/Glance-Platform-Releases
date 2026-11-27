@@ -2,15 +2,15 @@
 
 One manager for clean, movable desktop tiles.
 
-**[Download Glance Platform 2.0.0](https://github.com/Brusko25/Glance-Platform-Releases/releases/tag/v2.0.0)** · [User guide](USER_GUIDE.md) · [Release notes](CHANGELOG.md)
+**[Download Glance Platform 2.0.4](https://github.com/Brusko25/Glance-Platform-Releases/releases/tag/v2.0.4)** · [User guide](USER_GUIDE.md) · [Release notes](CHANGELOG.md)
 
 Glance Platform brings Finance, LLM Usage, Plex, Investments, Weather, Storage, System Resources, Cameras, SABnzbd, qBittorrent, Messages, Clock and Notes into a shared desktop tile system. Liquid Icons adds optional liquid backgrounds, from oil puddles and water spills to glass and neon, behind Windows desktop icons, which snap together and jiggle when you drop an icon. Tiles have matching options and right-click menus and run independently. Every tile resizes freely from any side or corner and lays its content out to the size you give it. Custom desktops give a monitor (or all of them) its own arrangement of tiles and program windows, swapped in and out with a keyboard shortcut. The manager handles installation, placement, the tray and a local Marketplace.
 
-![Glance tiles snapped together on the desktop](images/v2.0.0/desktop.png)
+![Glance tiles snapped together on the desktop](images/v2.0.4/desktop.png)
 
 ## Get started
 
-1. Download **Glance-Platform-2.0.0-Setup.exe** from the release page. If Glance is running, choose Quit Glance before running Setup.
+1. Download **Glance-Platform-2.0.4-Setup.exe** from the release page. If Glance is running, choose Quit Glance before running Setup.
 2. Run setup to install Glance for your Windows account, with a Start menu entry and an optional desktop shortcut.
 3. If Windows asks for administrator permission for the bundled CPU sensor, approve it to show CPU temperature in Plex. Glance installs either way, and you can add the sensor later with Settings → Repair CPU temperature.
 4. Open Glance from the Start menu or its shortcut and install the tiles you want from Marketplace.
@@ -47,6 +47,26 @@ Drag any side or corner of a tile to any size and shape; hold Ctrl while draggin
 
 Investments requires your own approved Webull API access for Webull syncing.
 
+## Custom desktops
+
+Build a whole screen out of tiles and program windows, give it a keyboard shortcut, and swap it in on one monitor or all of them. Press the shortcut again and every window goes back where it was. Set them up in the Glance window → **Desktop** → **Custom Desktops**. Three examples, each a full 1440p monitor:
+
+**Home server:** downloads, cameras, system, storage, Plex and AI usage, with a row of market charts.
+
+![Custom desktop: SABnzbd, Investments and Weather on top, two cameras around System Resources, LLM Usage, Storage and Plex, and eight Finance charts along the bottom](images/v2.0.4/desktop-home-server.jpg)
+
+**Markets:** eight large charts, investments, the weather, a clock and a note.
+
+![Custom desktop: eight Finance charts in two rows, with Investments, Weather, Clock and Notes below](images/v2.0.4/desktop-markets.png)
+
+**Camera wall:** four cameras, with the time, the weather, system and storage down the side.
+
+![Custom desktop: four cameras (Driveway, Front Door, Backyard, Street) with Clock, Weather, System Resources and Storage](images/v2.0.4/desktop-cameras.jpg)
+
+![Glance window: the Custom Desktops list with three desktops and their shortcuts](images/v2.0.4/custom-desktops.png) ![Setting up a custom desktop: its monitor, shortcut, background and tiles](images/v2.0.4/custom-desktop-editor.png)
+
+The downloads, readings and accounts in these pictures are sample data and the camera pictures are free stock photos (Pexels); the market charts and the weather were live public data.
+
 ## Create tiles with AI
 
 Describe the tile you want in **Create Tiles → Create with AI** and choose **Copy AI prompt**. Paste it into any AI chat, such as ChatGPT, Claude or Gemini; the prompt tells the AI everything it needs about Glance tiles. Then choose **Build from AI reply…** and paste the answer. Glance compiles it on your PC, checks it and adds it to your Marketplace, where you review what it can access before installing. If the build fails, one click copies the errors back for the AI to fix. AI-written tiles run with your Windows account's access, like any tile.
@@ -57,17 +77,17 @@ Marketplace currently browses bundled tiles and a local catalog. Public submissi
 
 Real captures of Glance Platform 1.6.0 on Windows 11. The tiles use the Classic layout with a black background, rounded corners and **Merge snapped tiles**, so touching tiles share one outline. All names, drives, streams, accounts and usage are sample data; the market charts and the Seattle weather were live public data at capture time.
 
-![Glance Plex with three streams and Tdarr working](images/v2.0.0/plex.png) ![System Resources over LLM Usage](images/v2.0.0/system-usage.png) ![Storage](images/v2.0.0/storage.png) ![Investments over Weather](images/v2.0.0/investments-weather.png)
+![Glance Plex with three streams and Tdarr working](images/v2.0.4/plex.png) ![System Resources over LLM Usage](images/v2.0.4/system-usage.png) ![Storage](images/v2.0.4/storage.png) ![Investments over Weather](images/v2.0.4/investments-weather.png)
 
-![Finance charts snapped in a row](images/v2.0.0/finance.png)
+![Finance charts snapped in a row](images/v2.0.4/finance.png)
 
-![Glance window: My Tiles](images/v2.0.0/manager.png)
-![Glance window: Marketplace](images/v2.0.0/marketplace.png)
-![Glance window: Style for all tiles](images/v2.0.0/style.png)
-![Glance window: Settings and Platform updates](images/v2.0.0/settings.png)
+![Glance window: My Tiles](images/v2.0.4/manager.png)
+![Glance window: Marketplace](images/v2.0.4/marketplace.png)
+![Glance window: Style for all tiles](images/v2.0.4/style.png)
+![Glance window: Settings and Platform updates](images/v2.0.4/settings.png)
 
-![System Resources options](images/v2.0.0/system-options.png)
-![Liquid Icons looks with synthetic desktop icons](images/v2.0.0/liquid-icons.png)
+![System Resources options](images/v2.0.4/system-options.png)
+![Liquid Icons looks with synthetic desktop icons](images/v2.0.4/liquid-icons.png)
 
-![Create with AI](images/v2.0.0/create.png)
-![Building a tile from an AI reply](images/v2.0.0/ai-build.png)
+![Create with AI](images/v2.0.4/create.png)
+![Building a tile from an AI reply](images/v2.0.4/ai-build.png)
